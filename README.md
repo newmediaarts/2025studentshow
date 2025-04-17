@@ -12,3 +12,5 @@ A working repo for the NMA 2025 Student Show
 - [Test04 - Coming Soon](https://newmediaarts.github.io/2025studentshow/test04-comingsoon/index.html)
 
 - [Test05 - Coming Soon](https://newmediaarts.github.io/2025studentshow/test05-comingsoon/index.html)
+
+- [Test06 - Coming Soon](https://newmediaarts.github.io/2025studentshow/test06-comingsoon/index.html)
