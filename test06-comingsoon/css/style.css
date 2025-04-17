@@ -54,6 +54,9 @@ body {
 @media (max-width: 510px) {
     .hero { scale: .4; }
 }
+@media (max-width: 300px) {
+    .hero { scale: .3; }
+}
 
 
 
