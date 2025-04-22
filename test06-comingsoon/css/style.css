@@ -90,32 +90,32 @@ body {
 
 }
 
-h1,
-h2 {
+.hero h1,
+.hero h2 {
     white-space: nowrap;
 }
 
-h1 {
+.hero h1 {
     font-family: "roc-grotesk-variable", sans-serif;
     font-size: 60pt;
     font-weight: 750;
 }
 
-h2 {
+.hero h2 {
     font-family: "roc-grotesk-variable", sans-serif;
     font-stretch: condensed;
     font-weight: 750;
     font-size: 4.2rem;
     font-weight: 600;
-    color: transparent;
-    -webkit-text-stroke: black 2px;
+    color: #00AE8F;
+    /* -webkit-text-stroke: black 2px; */
     text-shadow: #FAFBE7 -0.4rem -0.4rem;
     margin: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-h3 {
+.hero h3 {
     font-family: "geneo-std", serif;
     font-size: 2rem;
     line-height: 0;
