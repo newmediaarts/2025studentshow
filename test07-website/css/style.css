@@ -16,6 +16,7 @@ body {
     margin: 0;
     padding: 0;
     background: var(--body-background);
+    font-family: "roc-grotesk-variable", sans-serif;
 }
 
 * {
@@ -271,27 +272,22 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
 }
 
 /* TEMP SECTION */
-section {
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgba(0, 0, 0, 0.1); */
-    /* rotate: 15deg; */
-}
+
 
 #studentnav {
     height: auto;
     min-height: auto;
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 0;
     z-index: 500;
     width: 20%;
     text-align: right;
     rotate: -15deg;
-    translate: 0 -50%
+    /* translate: 0 -50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #studentnav ul,
@@ -307,7 +303,39 @@ section {
     margin: 0;
 }
 
+#studentnav summary {
+    margin: .5em 0;
+    padding: 0;
+}
+
+#studentnav details {
+    margin: 0;
+    padding: 0;
+}
+
+#studentnav  summary { 
+        cursor: pointer;
+        text-align: right;
+}
+
+#studentnav summary::-moz-list-bullet {
+    list-style-type: none;
+    display: none;
+}
+
+#studentnav summary::marker,
+#studentnav summary::-webkit-details-marker {
+    content: "";
+    color: red;
+    display: none;
+}
+
 .studentbox {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* rotate: 15deg; */
     max-width: 90%;
     /* margin-inline: auto; */
