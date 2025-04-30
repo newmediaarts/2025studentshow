@@ -42,6 +42,25 @@ img {
     margin: 0 auto;
 }
 
+@media (max-width: 1300px) {
+    .hero { scale: .8;  }
+}
+
+@media (max-width: 900px) {
+    .hero { scale: .6; }
+}
+
+@media (max-width: 767px) {
+    .hero { scale: .5; }
+}
+@media (max-width: 510px) {
+    .hero { scale: .4; }
+}
+@media (max-width: 300px) {
+    .hero { scale: .3; }
+}
+
+
 .hero .column {
     width: auto;
     display: flex;
