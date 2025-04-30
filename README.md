@@ -14,3 +14,6 @@ A working repo for the NMA 2025 Student Show
 - [Test05 - Coming Soon](https://newmediaarts.github.io/2025studentshow/test05-comingsoon/index.html)
 
 - [Test06 - Coming Soon](https://newmediaarts.github.io/2025studentshow/test06-comingsoon/index.html)
+
+## Website Page Tests
+- [Test07 - Website](https://newmediaarts.github.io/2025studentshow/test07-website/index.html) - Chris's initial rotated UI test
