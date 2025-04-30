@@ -26,22 +26,24 @@ img {
     max-width: 100%;
     height: auto;
 }
+@media (min-width: 767px) {
+    .scroll {
+        position: fixed;
+        width: 100%;
+        height: 120svh;
+        overflow: auto;
+        rotate: -15deg;
+        translate: 0 -10svh;
+        scale: 1.3;
+        padding: 10% 15% 15% 15%;
+        /* margin-top: 200px; */
+        /* border: solid red 2px; */
+    }
+    .scroll::-webkit-scrollbar {
+        display: none;
+    }
+}
 
-.scroll {
-    position: fixed;
-    width: 100%;
-    height: 120svh;
-    overflow: auto;
-    rotate: -15deg;
-    translate: 0 -10svh;
-    scale: 1.3;
-    padding: 10% 15% 15% 15%;
-    /* margin-top: 200px; */
-    border: solid red 2px;
-}
-.scroll::-webkit-scrollbar {
-    display: none;
-}
 
 .hero {
     display: flex;
@@ -255,7 +257,7 @@ body:has(.goo-background) { margin: 0; }
 html:has(.goo-background), body:has(.goo-background) { height: 100%; }
 
 .goo-background {
-    display: none;
+    /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -271,24 +273,32 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
     filter: url("#goo");
 }
 
+@media (max-width: 767px) {
+    .goo-background {
+        display: none;
+    }
+}
+
 /* TEMP SECTION */
 
-
-#studentnav {
-    height: auto;
-    min-height: auto;
-    position: fixed;
-    top: 30%;
-    left: 0;
-    z-index: 500;
-    width: 20%;
-    text-align: right;
-    rotate: -15deg;
-    /* translate: 0 -50%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+@media (min-width: 768px) {
+    #studentnav {
+        height: auto;
+        min-height: auto;
+        position: fixed;
+        top: 30%;
+        left: 0;
+        z-index: 500;
+        width: 20%;
+        text-align: right;
+        rotate: -15deg;
+        /* translate: 0 -50%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
+
 
 #studentnav ul,
 #studentnav li {
@@ -331,7 +341,7 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
 }
 
 .studentbox {
-    min-height: 100svh;
+    /* min-height: 100svh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,9 +349,17 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
     /* rotate: 15deg; */
     max-width: 90%;
     /* margin-inline: auto; */
-    padding-left: 20%;
+    padding: 6em 1em;
 }
 
-#site-logo {
-    rotate: -15deg;;
+@media (min-width: 768px) {
+    #site-logo {
+        rotate: -15deg;
+    }
+
+    .studentbox {
+        min-height: 100svh;
+        padding-left: 20%;
+    }
 }
+
