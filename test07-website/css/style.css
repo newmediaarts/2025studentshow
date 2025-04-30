@@ -21,6 +21,11 @@ body {
 * {
     box-sizing: border-box;}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .scroll {
     position: fixed;
     width: 100%;
@@ -304,7 +309,7 @@ section {
 
 .studentbox {
     /* rotate: 15deg; */
-    /* max-width: 70%; */
+    max-width: 90%;
     /* margin-inline: auto; */
     padding-left: 20%;
 }
