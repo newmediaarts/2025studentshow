@@ -313,3 +313,7 @@ section {
     /* margin-inline: auto; */
     padding-left: 20%;
 }
+
+#site-logo {
+    rotate: -15deg;;
+}
