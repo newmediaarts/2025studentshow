@@ -16,6 +16,14 @@ A working repo for the NMA 2025 Student Show
 - [Test06 - Coming Soon](https://newmediaarts.github.io/2025studentshow/test06-comingsoon/index.html)
 
 ## Website Page Tests
-- [Test07 - Website](https://newmediaarts.github.io/2025studentshow/test07-website/index.html) - Chris's initial rotated UI test (RISKY)
+- [Test07 - Website Test](https://newmediaarts.github.io/2025studentshow/test07-website/index.html) - Chris's initial rotated UI test (RISKY)
 
-- [Test08 - Website](https://newmediaarts.github.io/2025studentshow/test08-website/index.html) - Chris's initial safe UI test - (LET's GO WITH THIS, for now)
+- [Test08 - Website Test](https://newmediaarts.github.io/2025studentshow/test08-website/index.html) - Chris's initial safe UI test - (LET's GO WITH THIS, for now)
+
+## Website Iterations
+- [Test09 - Website](https://newmediaarts.github.io/2025studentshow/test09-website/index.html) - Chris continuing to set up site structure - (Created web components for header, footer, maps, and about sections)
+
+## Road Map / To-dos
+- Need to add support for relative paths for sub pages
+- Need to add web components to sub pages for each student (gabby and rheddie)
+- Need to fix hero h1's (currently absolute positioning and temp fix with /long-text class as a band-aid)
