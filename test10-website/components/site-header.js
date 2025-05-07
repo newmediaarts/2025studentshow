@@ -1,6 +1,14 @@
 class siteHeader extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
+
+        <style>
+
+        .site-header {
+          background-color: red;
+         }
+
+        </style
         
         <!-- COMPONENT HTML GOES HERE -->
         <header class="site-header">
