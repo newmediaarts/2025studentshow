@@ -2,14 +2,15 @@ class sectionMap extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       
-     <!-- MAP SECTION HTML GOES HERE -->
-     <section id="map">
+      <!-- MAP SECTION HTML GOES HERE -->
+      <section id="map">
+      <div class="container">
 
             [ map goes here ]
 
             [ directions go here ]
-
-        </section>
+      </div>
+      </section>
       
     `;
     

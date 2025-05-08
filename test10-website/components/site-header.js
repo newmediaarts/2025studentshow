@@ -1,14 +1,6 @@
 class siteHeader extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
-
-        <style>
-
-        .site-header {
-          background-color: red;
-         }
-
-        </style
         
         <!-- COMPONENT HTML GOES HERE -->
         <header class="site-header">
@@ -28,8 +20,8 @@ class siteHeader extends HTMLElement {
         </div>
         <nav>
             <ul>
+                <li><a href="index.html#students">Graduates</a></li>
                 <li><a href="animators.html#film">Short Film</a></li>
-                <li><a href="index.html#students">Students</a></li>
                 <li><a href="index.html#map">Event</a></li>
                 <li><a href="index.html#about">About</a></li>
             </ul>

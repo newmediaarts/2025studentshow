@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025 New Media Arts Student Show</title>
-    <link rel="stylesheet" href="../css/style.css?v=1.8">
+    <link rel="stylesheet" href="../css/style.css?v=1.9">
+    <base href="../">
 </head>
 
 <link rel="stylesheet" href="https://use.typekit.net/eyy0cqn.css">
@@ -15,49 +16,55 @@
     <site-header></site-header>
 
     <main>
-        <section class="hero long-text">
-            <div class="text-vertical">
-                <div class="title">
-                    <h1 class="text-outline">2025</h1>
-                    <h1 class="drop-shadow-b1">2025</h1>
-                    <h1 class="drop-shadow-b2">2025</h1>
-                    <h1 class="drop-shadow-b-bg">2025</h1>
+        <section class="hero">
+            <h1 class="hide-visually">2025 Interface Designers</h1>
+
+            <div class="hero-box">
+
+                <div class="text-vertical">
+                    <div class="title">
+                        <div class="text-outline">2025</div>
+                        <div class="drop-shadow drop-shadow-b1">2025</div>
+                        <div class="drop-shadow drop-shadow-b2">2025</div>
+                        <div class="drop-shadow drop-shadow-b-bg">2025</div>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="text-stack">
-                    <div class="title">
-                        <h1 class="text-black">Rheddie</h1>
-                        <h1 class="drop-shadow-a1">Rheddie</h1>
-                        <h1 class="drop-shadow-a2">Rheddie</h1>
-                        <h1 class="drop-shadow-a-bg">Rheddie</h1>
+                <div class="column">
+                    <div class="text-stack">
+                        <div class="title">
+                            <div class="text-black">Rheddie</div>
+                            <div class="drop-shadow drop-shadow-a1">Rheddie</div>
+                            <div class="drop-shadow drop-shadow-a2">Rheddie</div>
+                            <div class="drop-shadow drop-shadow-a-bg">Rheddie</div>
+                        </div>
+                        <div class="title">
+                            <div class="text-black">James</div>
+                            <div class="drop-shadow drop-shadow-a1">James</div>
+                            <div class="drop-shadow drop-shadow-a2">James</div>
+                            <div class="drop-shadow drop-shadow-a-bg">James</div>
+                        </div>
+                        <div class="title">
+                            <div class="text-black">Acosta</div>
+                            <div class="drop-shadow drop-shadow-a1">Acosta</div>
+                            <div class="drop-shadow drop-shadow-a2">Acosta</div>
+                            <div class="drop-shadow drop-shadow-a-bg">Acosta</div>
+                        </div>
+
+                        <h2>NMA Graduate</h2>
+
+                        <h3>Animation</h3>
+
+
                     </div>
-                    <div class="title">
-                        <h1 class="text-black">James</h1>
-                        <h1 class="drop-shadow-a1">James</h1>
-                        <h1 class="drop-shadow-a2">James</h1>
-                        <h1 class="drop-shadow-a-bg">James</h1>
-                    </div>
-                    <div class="title">
-                        <h1 class="text-black">Acosta</h1>
-                        <h1 class="drop-shadow-a1">Acosta</h1>
-                        <h1 class="drop-shadow-a2">Acosta</h1>
-                        <h1 class="drop-shadow-a-bg">Acosta</h1>
-                    </div>
-
-                    <h2>2025 NMA GRADUATE</h2>
-
-                    <h3>Animation</h3>
-
-
                 </div>
+
             </div>
 
         </section>
 
         <section class="studentbox" id="student1">
             <div>
-                <img src="../img/sample.png" alt="">
+                <img src="img/sample.png" alt="">
             </div>
         </section>
 
@@ -67,7 +74,7 @@
             <h3>See More Animators</h3>
             <nav>
                 <ul>
-                    <li><a href="#student1">Student 1</a></li>
+                    <li><a href="rheddie/index.html">Rheddie James Acosta</a></li>
                     <li><a href="#student2">Student 2</a></li>
                     <li><a href="#student3">Student 3</a></li>
                     <li><a href="#student4">Student 4</a></li>
@@ -98,7 +105,7 @@
             <h3>Check out the Designers</h3>
 
             <ul>
-                <li><a href="#student11">Student 11</a></li>
+                <li><a href="gabby/index.html">Gabby Abbey</a></li>
                 <li><a href="#student12">Student 12</a></li>
                 <li><a href="#student13">Student 13</a></li>
                 <li><a href="#student14">Student 14</a></li>
@@ -131,28 +138,9 @@
 
     <site-footer></site-footer>
 
-    <!-- ANIMATED GOO BACKGROUND -->
-    <div class="goo-background">
-        <svg class="goo" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-            <defs>
-                <filter id="goo">
-                    <!-- Increase stdDeviation for a stronger blur effect -->
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
-                    <!-- Adjust the color matrix for a more pronounced goo effect -->
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -10" result="goo" />
-                    <!-- This composite step is what creates the 'goo' -->
-                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-                </filter>
-            </defs>
-            <g id="svgOne" filter="url(#goo)"></g>
-        </svg>
-    </div>
-
-
-    <script src="../js/goo.js"></script>
-
+    <effect-goo></effect-goo>
     <!-- MAIN JS -->
-    <script src="../js/script.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
 
 </body>
 

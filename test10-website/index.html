@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025 New Media Arts Student Show</title>
-    <link rel="stylesheet" href="css/style.css?v=1.8">
+    <link rel="stylesheet" href="css/style.css?v=1.9">
 </head>
 
 <link rel="stylesheet" href="https://use.typekit.net/eyy0cqn.css">
@@ -16,41 +16,47 @@
 
     <main>
         <section class="hero">
-            <div class="text-vertical">
-                <div class="title">
-                    <h1 class="text-outline">2025</h1>
-                    <h1 class="drop-shadow-b1">2025</h1>
-                    <h1 class="drop-shadow-b2">2025</h1>
-                    <h1 class="drop-shadow-b-bg">2025</h1>
+            <h1 class="hide-visually">2025 Metamorphosis</h1>
+
+            <div class="hero-box">
+
+                <div class="text-vertical">
+                    <div class="title">
+                        <div class="text-outline">2025</div>
+                        <div class="drop-shadow drop-shadow-b1">2025</div>
+                        <div class="drop-shadow drop-shadow-b2">2025</div>
+                        <div class="drop-shadow drop-shadow-b-bg">2025</div>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="text-stack">
-                    <div class="title">
-                        <h1 class="text-black">META</h1>
-                        <h1 class="drop-shadow-a1">META</h1>
-                        <h1 class="drop-shadow-a2">META</h1>
-                        <h1 class="drop-shadow-a-bg">META</h1>
+                <div class="column">
+                    <div class="text-stack">
+                        <div class="title">
+                            <div class="text-black">META</div>
+                            <div class="drop-shadow drop-shadow-a1">META</div>
+                            <div class="drop-shadow drop-shadow-a2">META</div>
+                            <div class="drop-shadow drop-shadow-a-bg">META</div>
+                        </div>
+                        <div class="title">
+                            <div class="text-black">MORPH</div>
+                            <div class="drop-shadow drop-shadow-a1">MORPH</div>
+                            <div class="drop-shadow drop-shadow-a2">MORPH</div>
+                            <div class="drop-shadow drop-shadow-a-bg">MORPH</div>
+                        </div>
+                        <div class="title">
+                            <div class="text-black">OSIS</div>
+                            <div class="drop-shadow drop-shadow-a1">OSIS</div>
+                            <div class="drop-shadow drop-shadow-a2">OSIS</div>
+                            <div class="drop-shadow drop-shadow-a-bg">OSIS</div>
+                        </div>
+
+                        <h2>KCC NEW MEDIA ARTS</h2>
+
+                        <h3>Student Show</h3>
+
+
                     </div>
-                    <div class="title">
-                        <h1 class="text-black">MORPH</h1>
-                        <h1 class="drop-shadow-a1">MORPH</h1>
-                        <h1 class="drop-shadow-a2">MORPH</h1>
-                        <h1 class="drop-shadow-a-bg">MORPH</h1>
-                    </div>
-                    <div class="title">
-                        <h1 class="text-black">OSIS</h1>
-                        <h1 class="drop-shadow-a1">OSIS</h1>
-                        <h1 class="drop-shadow-a2">OSIS</h1>
-                        <h1 class="drop-shadow-a-bg">OSIS</h1>
-                    </div>
-
-                    <h2>KCC NEW MEDIA ARTS</h2>
-
-                    <h3>Student Show</h3>
-
-
                 </div>
+
             </div>
 
         </section>
@@ -133,25 +139,7 @@
 
     <site-footer></site-footer>
 
-    <!-- ANIMATED GOO BACKGROUND -->
-    <div class="goo-background">
-        <svg class="goo" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-            <defs>
-                <filter id="goo">
-                    <!-- Increase stdDeviation for a stronger blur effect -->
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
-                    <!-- Adjust the color matrix for a more pronounced goo effect -->
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -10" result="goo" />
-                    <!-- This composite step is what creates the 'goo' -->
-                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-                </filter>
-            </defs>
-            <g id="svgOne" filter="url(#goo)"></g>
-        </svg>
-    </div>
-
-    <!-- GOO JS -->
-    <script src="js/goo.js"></script>
+    <effect-goo></effect-goo>
 
     <!-- MAIN JS -->
     <script src="js/script.js" type="module"></script>
