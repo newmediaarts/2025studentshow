@@ -94,7 +94,8 @@ img {
 }
 
 /* HELPERS */
-.hide-visually {
+.hide-visually,
+::part(hide-visually) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -398,7 +399,8 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
 
 /* SECTIONS  */
 
-#students {
+#students,
+::part(students){
     background: black;
     /* mix-blend-mode: difference; */
     color: white;
