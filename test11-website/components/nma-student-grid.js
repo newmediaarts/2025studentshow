@@ -60,14 +60,15 @@ class NMAStudentGrid extends HTMLElement {
     list-style: none;
     padding-inline: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 350px));
     grid-gap: 1rem;
+    justify-content: center;
     max-width: clamp(300px, 100vw - 2rem, 1200px);
     margin-inline: auto; 
   }
 
   .student {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 2 /3;
     display: block;
     position: relative;
     color: inherit;
