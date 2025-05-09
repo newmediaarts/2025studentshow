@@ -16,111 +16,22 @@
     <site-header></site-header>
 
     <main>
-        <section class="hero">
-            <h1 class="hide-visually">2025 Interface Designers</h1>
-
-            <div class="hero-box">
-
-                <div class="text-vertical">
-                    <div class="title">
-                        <div class="text-outline">2025</div>
-                        <div class="drop-shadow drop-shadow-b1">2025</div>
-                        <div class="drop-shadow drop-shadow-b2">2025</div>
-                        <div class="drop-shadow drop-shadow-b-bg">2025</div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="text-stack">
-                        <div class="title">
-                            <div class="text-black">Gabby</div>
-                            <div class="drop-shadow drop-shadow-a1">Gabby</div>
-                            <div class="drop-shadow drop-shadow-a2">Gabby</div>
-                            <div class="drop-shadow drop-shadow-a-bg">Gabby</div>
-                        </div>
-                        <div class="title">
-                            <div class="text-black">Abbey</div>
-                            <div class="drop-shadow drop-shadow-a1">Abbey</div>
-                            <div class="drop-shadow drop-shadow-a2">Abbey</div>
-                            <div class="drop-shadow drop-shadow-a-bg">Abbey</div>
-                        </div>
-
-                        <h2>NMA Graduate</h2>
-
-                        <h3>Interface Design</h3>
-
-
-                    </div>
-                </div>
-
-            </div>
+      <nma-student student-url="/gabby" program="Interface Design"></nma-student>
+             <section id="students" class="student-portraits">
 
         </section>
 
-        <section class="studentbox" id="student1">
-            <div>
-                <img src="img/sample.png" alt="">
-            </div>
-        </section>
-
-        <section id="students" class="student-portraits">
-
+        <section>
 
             <h3>See More Animators</h3>
-            <nav>
-                <ul>
-                    <li><a href="rheddie/index.html">Rheddie James Acosta</a></li>
-                    <li><a href="#student2">Student 2</a></li>
-                    <li><a href="#student3">Student 3</a></li>
-                    <li><a href="#student4">Student 4</a></li>
-                    <li><a href="#student5">Student 5</a></li>
-                    <li><a href="#student6">Student 6</a></li>
-                    <li><a href="#student7">Student 7</a></li>
-                    <li><a href="#student8">Student 8</a></li>
-                    <li><a href="#student9">Student 9</a></li>
-                    <li><a href="#student10">Student 10</a></li>
-                </ul>
-                <!-- <ul>
-                    <li>Designers
-                        <ul>
-                            <li><a href="#student11">Student 11</a></li>
-                            <li><a href="#student12">Student 12</a></li>
-                            <li><a href="#student13">Student 13</a></li>
-                            <li><a href="#student14">Student 14</a></li>
-                            <li><a href="#student15">Student 15</a></li>
-                            <li><a href="#student16">Student 16</a></li>
-                            <li><a href="#student17">Student 17</a></li>
-                        </ul>
-                    </li>
-                </ul> -->
-            </nav>
-
+            <!--Omit student by  the url in it's data object -->
+            <nma-student-grid category="animators" omit="/gabby"></nma-student-grid>
+         
             <br>&nbsp;<br>
 
             <h3>Check out the Designers</h3>
 
-            <ul>
-                <li><a href="gabby/index.html">Gabby Abbey</a></li>
-                <li><a href="#student12">Student 12</a></li>
-                <li><a href="#student13">Student 13</a></li>
-                <li><a href="#student14">Student 14</a></li>
-                <li><a href="#student15">Student 15</a></li>
-                <li><a href="#student16">Student 16</a></li>
-                <li><a href="#student17">Student 17</a></li>
-            </ul>
-
-
-            <!-- <nav class="choose-your-specialty">
-                <ul>
-                    <li><a href="animators.html">
-                            <h2>Animation</h2>
-                            <p>Demo Reels &amp; Short Film: Alien Intelligence</p>
-                        </a></li>
-                    <li><a href="designers.html">
-                            <h2>Design</h2>
-                            <p>Interface Design Showcase &amp; Portfolios</p>
-                        </a></li>
-                </ul>
-            </nav> -->
+            <nma-student-grid category="interface" omit="/gabby"></nma-student-grid>
 
         </section>
 
