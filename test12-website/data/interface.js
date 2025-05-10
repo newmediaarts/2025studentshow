@@ -39,8 +39,8 @@ export default [
     name: 'Katheren',
     lastName: 'Lam',
     url: '/katheren',
-    image: '../img/protrait-katheren.webp',
-    hoverImage: '../img/protrait-katheren-hover.webp',
+    image: 'img/protrait-katheren.webp',
+    hoverImage: 'img/protrait-katheren-hover.webp',
     media: [
       {
         src: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-project1.webp',
@@ -75,8 +75,8 @@ export default [
     name: 'Emmanuel',
     lastName: 'Correa',
     url: '/emmanuel',
-    image: '../img/protrait-emmanuel.webp',
-    hoverImage: '../img/protrait-emmanuel-hover.webp',
+    image: 'img/protrait-emmanuel.webp',
+    hoverImage: 'img/protrait-emmanuel-hover.webp',
     media: [
       {
         src: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-project1.webp',
@@ -111,8 +111,8 @@ export default [
     name: 'Emiri',
     lastName: 'Miyaji',
     url: '/emiri',
-    image: '../img/protrait-emiri.webp',
-    hoverImage: '../img/protrait-emiri-hover.webp',
+    image: 'img/protrait-emiri.webp',
+    hoverImage: 'img/protrait-emiri-hover.webp',
     media: [
       {
         src: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-project1.webp',
@@ -147,8 +147,8 @@ export default [
     name: 'Angelica',
     lastName: 'Palilio',
     url: '/angelica',
-    image: '../img/protrait-angelica.webp',
-    hoverImage: '../img/protrait-angelica-hover.webp',
+    image: 'img/protrait-angelica.webp',
+    hoverImage: 'img/protrait-angelica-hover.webp',
     media: [
       {
         src: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-project1.webp',
@@ -183,8 +183,8 @@ export default [
     name: 'Michael',
     lastName: 'Fiocco',
     url: '/michael',
-    image: '../img/protrait-michael.webp',
-    hoverImage: '../img/protrait-michael-hover.webp',
+    image: 'img/protrait-michael.webp',
+    hoverImage: 'img/protrait-michael-hover.webp',
     media: [
       {
         src: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-project1.webp',
@@ -219,8 +219,8 @@ export default [
     name: 'Hanna',
     lastName: 'Shibata',
     url: '/hanna',
-    image: '../img/protrait-hanna.webp',
-    hoverImage: '../img/protrait-hanna-hover.webp',
+    image: 'img/protrait-hanna.webp',
+    hoverImage: 'img/protrait-hanna-hover.webp',
     media: [
       {
         src: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-project1.webp',
