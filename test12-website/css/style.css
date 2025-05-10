@@ -512,7 +512,9 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
     color: white;
     padding: 6em 1em;
 }
-
+#map a, address a{
+    color: white
+}
 /* ABOUT SECTION */
 #about {
     background: black;
