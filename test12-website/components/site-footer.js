@@ -14,4 +14,5 @@ class siteFooter extends HTMLElement {
       
     };
   };
+
   customElements.define("site-footer", siteFooter);

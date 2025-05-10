@@ -389,13 +389,14 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
  }
 
  .site-header nav ul li:has(ul) a::after {
-    content: "&#9660;";
+    content: "▼";
     display: inline-block;
     margin-left: .5em;
  }
  .site-header nav ul li ul a::after {
     display: none;
  }
+
 
 /* SECTIONS  */
 
@@ -461,13 +462,31 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
 }
 
 .student-portraits a {
-    display: block;
+    /* display: block; */
     /* border: 1px solid white; */
-    background-color: rgb(255 255 255 / .2);
+    /* background-color: rgb(255 255 255 / .2); */
+    /* padding: 1em; */
+    /* aspect-ratio: 1/1; */
+    /* min-width: 15em; */
+    /* border-radius: 2em; */
+}
+
+.student-portraits img {
+    display: block;
     padding: 1em;
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/3;
     min-width: 15em;
     border-radius: 2em;
+    width: 400px;
+}
+
+.student-portraits .col-5 img {
+    display: block;
+    padding: 1em;
+    aspect-ratio: 2/3;
+    min-width: 15em;
+    border-radius: 2em;
+    width: 300px;
 }
 
 .studentbox {

@@ -216,11 +216,11 @@ class NMAStudent extends HTMLElement {
 
         <section class="studentbox" part="students">
             <div class="profile">
-              <h1>${student.name} ${student.lastName}</h1>
-              <a href="${student.portfolio}">Portfolio website</a>
-              <img class="profile__image" src="${student.image}" alt="${student.name}" height="500" width="500">
-            </div>
-  
+        <h1>${student.name} ${student.lastName}</h1>
+        <a href="${student.portfolio}">Portfolio website</a>
+        <img class="profile__image" src="${student.image}" alt="${student.name}" height="500" width="500">
+    </div>
+
             <div class="media">
             ${student.media.map(media => html`
                 <div class="media__item"> 
