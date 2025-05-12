@@ -17,6 +17,7 @@ const styles = css `
 .hero-box {
     display: flex;
     width: fit-content;
+    /* max-width: 100svh; */
     margin-top: 25%;
     padding-bottom: 10%;
     margin-left: 20vw;
@@ -24,6 +25,21 @@ const styles = css `
     rotate: -15deg;
     /* border: 2px solid red; */
     translate: 0 -20%;
+}
+@media (max-width: 767px) {
+    .hero-box {
+        translate: 0 -5%;
+        margin-top: 12em;
+        padding-bottom: 8em;
+    }
+}
+
+@media (max-width: 435px) {
+    .hero-box {
+        translate: 0 0;
+        margin-top: 10em;
+        padding-bottom: 5em;
+    }
 }
 
 .hero .title {
@@ -63,7 +79,7 @@ const styles = css `
     font-weight: 600;
     line-height: 1;
     color: #00AE8F;
-    text-shadow: #FAFBE7 -0.4rem -0.4rem;
+    text-shadow: #FAFBE7 -0.4vw -0.4vw;
     margin: 0;
     margin-top: .1em;
     margin-bottom: .1em;
@@ -75,7 +91,7 @@ const styles = css `
     font-size: clamp(1em, 2vw, 2.5em);
     line-height: 1;
     font-weight: 600;
-    text-shadow: #FAFBE7 0.4rem 0.4rem;
+    text-shadow: #FAFBE7 0.4vw 0.4vw;
     color: #C51A7D;
     margin: 0;
 }
@@ -89,40 +105,42 @@ const styles = css `
 
 .hero .drop-shadow-a1 {
     color: transparent;
-    text-shadow: #00AE8F -0.8rem 0;
+    text-shadow: #00AE8F -0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-a2 {
     color: transparent;
-    text-shadow: #C51A7D 0.8rem 0;
+    text-shadow: #C51A7D 0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
 
 .hero .drop-shadow-a-bg {
     color: black;
-    text-shadow: #000000 0.8rem 0, #000000 -0.8rem 0;
+    text-shadow: #000000 0.8vw 0, #000000 -0.8vw 0;
 }
 
-.hero .hero .hero .drop-shadow-b1 {
+.hero .drop-shadow-b1 {
     color: transparent;
-    text-shadow: #00AE8F 0 -0.4rem;
+    text-shadow: #00AE8F 0 -0.4vw;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-b2 {
     color: transparent;
-    text-shadow: #C51A7D 0 0.4rem;
+    text-shadow: #C51A7D 0 0.4vw;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
 
 .hero .drop-shadow-b-bg {
     color: transparent;
-    text-shadow: #000000 0 0.4rem, #000000 0 -0.4rem;
+    text-shadow: #888 0 0 ;
+    mix-blend-mode: plus-lighter;
+    z-index: -1;
 }
 
 .hero .text-outline {
@@ -138,13 +156,31 @@ const styles = css `
     z-index: 5;
 }
 
+.student-two-col {
+    padding: 2rem;
+}
+@media (min-width: 768px) {
+    .student-two-col {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .profile {
+        position: sticky;
+        top: 0;
+    }
+}
+
+
+.profile {
+    margin-bottom: 3rem
+}
 
 .media {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem 0
 }
 
 img, video {
@@ -153,11 +189,34 @@ img, video {
   height: auto;
 }
 
+.profile h1 {
+    font-size: 3em;
+    line-height: 1.1;
+    margin: 0;
+}
+
 .profile__image {
   display: block;
-  width: 300px;
+  width: 100%;
   height: auto;
 }
+
+/* BUTTONS */
+.button {
+    background-color: var(--bg-yellow);
+    color: black;
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: .5em;
+    margin: 1.5em .5em .5em 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button:hover {
+    background-color: var(--bg-green);
+    color: black;
+}
+
 ` 
 
 class NMAStudent extends HTMLElement {
@@ -215,23 +274,32 @@ class NMAStudent extends HTMLElement {
 
 
         <section class="studentbox" part="students">
-            <div class="profile">
-        <h1>${student.name} ${student.lastName}</h1>
-        <a href="${student.portfolio}">Portfolio website</a>
-        <img class="profile__image" src="${student.image}" alt="${student.name}" height="500" width="500">
-    </div>
 
-            <div class="media">
-            ${student.media.map(media => html`
-                <div class="media__item"> 
-                ${media.type === 'video' ? html`
-                    <video class="media__video" controls>
-                        <source src="${media.src}" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
-                ` : html`<img class="media__image" src="${media.src}" alt="${media.alt}" height="500" width="500">`}
+            <div class="student-two-col">
+                <div class="profile">
+                    <h1>${student.name} ${student.lastName}</h1>
+                    <p>${program}</p>
+                    <div>
+                        <img class="profile__image" src="${student.image}" alt="${student.name}" height="500" width="500">
+                    </div>
+                    <div>
+                        <a class="button" href="${student.portfolio}">Website</a>
+                    </div>
                 </div>
-            `).join('')}
+
+                <div class="media">
+                ${student.media.map(media => html`
+                    <div class="media__item"> 
+                    ${media.type === 'video' ? html`
+                        <video class="media__video" controls>
+                            <source src="${media.src}" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    ` : html`<img class="media__image" src="${media.src}" alt="${media.alt}" height="500" width="500">`}
+                    </div>
+                `).join('')}
+                </div>
+            
             </div>
         </section>
 `

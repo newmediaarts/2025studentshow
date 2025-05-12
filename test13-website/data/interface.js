@@ -2,7 +2,7 @@ export default [
   {
     name: 'Gabby',
     lastName: 'Abbey',
-    url: '/gabby',
+    url: 'gabby',
     image: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-studentimage.webp',
     hoverImage: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-studentimage-hover.webp',
     media: [
@@ -38,7 +38,7 @@ export default [
   {
     name: 'Katheren',
     lastName: 'Lam',
-    url: '/katheren',
+    url: 'katheren',
     image: 'img/portrait-katheren.webp',
     hoverImage: 'img/portrait-katheren-hover.webp',
     media: [
@@ -63,7 +63,7 @@ export default [
   {
     name: 'Emmanuel',
     lastName: 'Correa',
-    url: '/emmanuel',
+    url: 'emmanuel',
     image: 'img/portrait-emmanuel.webp',
     hoverImage: 'img/portrait-emmanuel-hover.webp',
     media: [
@@ -88,7 +88,7 @@ export default [
   {
     name: 'Emiri',
     lastName: 'Miyaji',
-    url: '/emiri',
+    url: 'emiri',
     image: 'img/portrait-emiri.webp',
     hoverImage: 'img/portrait-emiri-hover.webp',
     media: [
@@ -114,7 +114,7 @@ export default [
   {
     name: 'Angelica',
     lastName: 'Palilio',
-    url: '/angelica',
+    url: 'angelica',
     image: 'img/portrait-angelica.webp',
     hoverImage: 'img/portrait-angelica-hover.webp',
     media: [
@@ -145,7 +145,7 @@ export default [
   {
     name: 'Michael',
     lastName: 'Fiocco',
-    url: '/michael',
+    url: 'michael',
     image: 'img/portrait-michael.webp',
     hoverImage: 'img/portrait-michael-hover.webp',
     media: [
@@ -176,7 +176,7 @@ export default [
   {
     name: 'Hanna',
     lastName: 'Shibata',
-    url: '/hanna',
+    url: 'hanna',
     image: 'img/portrait-hanna.webp',
     hoverImage: 'img/portrait-hanna-hover.webp',
     media: [

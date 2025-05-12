@@ -29,4 +29,5 @@ A working repo for the NMA 2025 Student Show
 
 
 ## Road Map / To-dos
-- Need to fix hero text on mobile
+- Need to fix hero box clipping on large landscape
+- fix logo colors on different color bg pages

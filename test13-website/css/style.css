@@ -102,6 +102,22 @@ img, video {
     height: auto;
 }
 
+/* BUTTONS */
+.button {
+    background-color: var(--bg-yellow);
+    color: black;
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: .5em;
+    margin: .5em .5em .5em 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button:hover {
+    background-color: var(--bg-green);
+    color: black;
+}
+
 /* HELPERS */
 .hide-visually,
 ::part(hide-visually) {
@@ -116,7 +132,6 @@ img, video {
 }
 
 /* HERO  */
-
 .hero {
     display: flex;
     justify-content: center;
@@ -128,6 +143,7 @@ img, video {
 .hero-box {
     display: flex;
     width: fit-content;
+    /* max-width: 100svh; */
     margin-top: 25%;
     padding-bottom: 10%;
     margin-left: 20vw;
@@ -139,6 +155,8 @@ img, video {
 @media (max-width: 767px) {
     .hero-box {
         translate: 0 -5%;
+        margin-top: 12em;
+        padding-bottom: 8em;
     }
 }
 
@@ -187,7 +205,7 @@ img, video {
     font-weight: 600;
     line-height: 1;
     color: #00AE8F;
-    text-shadow: #FAFBE7 -0.4rem -0.4rem;
+    text-shadow: #FAFBE7 -0.4vw -0.4vw;
     margin: 0;
     margin-top: .1em;
     margin-bottom: .1em;
@@ -199,7 +217,7 @@ img, video {
     font-size: clamp(1em, 2vw, 2.5em);
     line-height: 1;
     font-weight: 600;
-    text-shadow: #FAFBE7 0.4rem 0.4rem;
+    text-shadow: #FAFBE7 0.4vw 0.4vw;
     color: #C51A7D;
     margin: 0;
 }
@@ -213,40 +231,42 @@ img, video {
 
 .hero .drop-shadow-a1 {
     color: transparent;
-    text-shadow: #00AE8F -0.8rem 0;
+    text-shadow: #00AE8F -0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-a2 {
     color: transparent;
-    text-shadow: #C51A7D 0.8rem 0;
+    text-shadow: #C51A7D 0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
 
 .hero .drop-shadow-a-bg {
     color: black;
-    text-shadow: #000000 0.8rem 0, #000000 -0.8rem 0;
+    text-shadow: #000000 0.8vw 0, #000000 -0.8vw 0;
 }
 
-.hero .hero .hero .drop-shadow-b1 {
+.hero .drop-shadow-b1 {
     color: transparent;
-    text-shadow: #00AE8F 0 -0.4rem;
+    text-shadow: #00AE8F 0 -0.4vw;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-b2 {
     color: transparent;
-    text-shadow: #C51A7D 0 0.4rem;
+    text-shadow: #C51A7D 0 0.4vw;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
 
 .hero .drop-shadow-b-bg {
     color: transparent;
-    text-shadow: #000000 0 0.4rem, #000000 0 -0.4rem;
+    text-shadow: #888 0 0 ;
+    mix-blend-mode: plus-lighter;
+    z-index: -1;
 }
 
 .hero .text-outline {
@@ -382,6 +402,7 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
     padding: 1em;
     position: absolute;
     width: 100%;
+    z-index: 100;
 }
 
 @media (max-width: 767px) {
@@ -429,6 +450,13 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
 .site-header nav ul li:hover ul {
     display: block;
  }
+
+ /* @media (max-width: 767px) { */
+    .site-header nav ul li:hover {
+        background-color: var(--color-body-background);
+        border-radius: .5em;
+    }
+ /* } */
 
  .site-header nav ul li:has(ul) a::after {
     content: "▼";
@@ -559,9 +587,16 @@ path.bg-yellow {fill:#FFFF42;}
     color: white;
     padding: 6em 1em;
 }
-#map a, address a{
-    color: white
+
+address a {
+    color: yellow;
 }
+address a:hover{
+    color: white;
+}
+/* #map a, address a{
+    color: white
+} */
 /* ABOUT SECTION */
 #about {
     background: black;
@@ -586,10 +621,41 @@ footer {
 /* SUB PAGES */
 
 .page-animators {
-    background: #00AE8F;
+    /* background: #00AE8F; */
+    --color-body-background: #00AE8F;
     color: white;
 }
 .page-designers {
-    background: #C51A7D;
+    /* background: #C51A7D; */
+    --color-body-background: #C51A7D;
     color: white;
+}
+
+/* FOOTER  */
+.site-footer {
+    background: black;
+}
+/* FOOTER SOCIAL MEDIA ICONS */
+
+
+.socialmedia {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.socialmedia li {
+    display: inline-block;
+    margin: 0 .3em;
+}
+
+.socialmedia svg {
+    width: 20px;
+    height: 20px;
+    fill: rgb(255 255 255 / .8);
+}
+
+.socialmedia a:hover svg {
+    fill: rgb(255 255 255 / 1);
 }

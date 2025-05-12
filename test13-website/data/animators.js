@@ -2,7 +2,7 @@ export default [
   {
     name: 'Maya',
     lastName: 'Bautista',
-    url: '/maya',
+    url: 'maya',
     image: 'img/portrait-maya.webp',
     hoverImage: 'img/portrait-maya-hover.webp', 
     media: [
@@ -49,7 +49,7 @@ export default [
   {
     name: 'Rheddie James',
     lastName: 'Acosta',
-    url: '/rheddie',
+    url: 'rheddie',
     image: 'img/portrait-rheddie.webp',
     hoverImage: 'img/portrait-rheddie-hover.webp', 
     media: [
@@ -79,7 +79,7 @@ export default [
   {
     name: 'Noelani',
     lastName: 'Fortin',
-    url: '/noelani',
+    url: 'noelani',
     image: 'img/portrait-noelani.webp',
     hoverImage: 'img/portrait-noelani-hover.webp', 
     media: [
@@ -109,7 +109,7 @@ export default [
   {
     name: 'Lucas',
     lastName: 'Stevens',
-    url: '/lucas',
+    url: 'lucas',
     image: 'img/portrait-lucas.webp',
     hoverImage: 'img/portrait-lucas-hover.webp', 
     media: [
@@ -139,7 +139,7 @@ export default [
   {
     name: 'Austin',
     lastName: 'Ubogen',
-    url: '/austin',
+    url: 'austin',
     image: 'img/portrait-austin.webp',
     hoverImage: 'img/portrait-austin-hover.webp', 
     media: [
@@ -163,7 +163,7 @@ export default [
   {
     name: 'Thomas',
     lastName: 'Drown',
-    url: '/thomas',
+    url: 'thomas',
     image: 'img/portrait-thomas.webp',
     hoverImage: 'img/portrait-thomas-hover.webp', 
     media: [
@@ -188,7 +188,7 @@ export default [
   {
     name: 'Mekiah',
     lastName: 'Tong',
-    url: '/mekiah',
+    url: 'mekiah',
     image: 'img/portrait-mekiah.webp',
     hoverImage: 'img/portrait-mekiah-hover.webp', 
     media: [
@@ -212,7 +212,7 @@ export default [
   {
     name: 'Race',
     lastName: 'Nacapuy',
-    url: '/race',
+    url: 'race',
     image: 'img/portrait-race.webp',
     hoverImage: 'img/portrait-race-hover.webp', 
     media: [
@@ -242,7 +242,7 @@ export default [
   {
     name: 'Zhuo Zheng',
     lastName: 'Zheng',
-    url: '/philip',
+    url: 'philip',
     image: 'img/portrait-philip.webp',
     hoverImage: 'img/portrait-philip-hover.webp', 
     media: [
@@ -261,7 +261,7 @@ export default [
   {
     name: 'Richard "Esco"',
     lastName: 'Escobar-Mo',
-    url: '/esco',
+    url: 'esco',
     image: 'img/portrait-esco.webp',
     hoverImage: 'img/portrait-esco-hover.webp', 
     media: [

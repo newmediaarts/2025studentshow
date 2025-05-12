@@ -34,7 +34,7 @@ class sectionAbout extends HTMLElement {
           <div class="one-half">
 
             <h2>Creators</h2>
-            <p>Shout out to the team who helped make the student show happen! Special thanks to Chris Gargiulo who helped us to code this website!</p>
+            <p>Shout out to the team who helped make the student show happen! Special thanks to Chris Gargiulo, Melissa Lum, and David Efhan for helping us to code this website!</p>
             <ul>
               <li>Gabriella Abbey</li>
               <li>Emmanuel Correa</li>
