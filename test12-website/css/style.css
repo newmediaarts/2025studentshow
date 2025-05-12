@@ -136,6 +136,19 @@ img, video {
     /* border: 2px solid red; */
     translate: 0 -20%;
 }
+@media (max-width: 767px) {
+    .hero-box {
+        translate: 0 -5%;
+    }
+}
+
+@media (max-width: 435px) {
+    .hero-box {
+        translate: 0 0;
+        margin-top: 10em;
+        padding-bottom: 5em;
+    }
+}
 
 .hero .title {
     font-family: "roc-grotesk-variable", sans-serif;
@@ -356,6 +369,13 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
 }
 
 /* HEADER */
+    /* .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background-color: var(--color-siteheader-background);
+    } */
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -364,15 +384,28 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
     width: 100%;
 }
 
+@media (max-width: 767px) {
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        position: absolute;
+        width: 100%;
+    }
+}
 
 .site-header .nma-logo {
-    width: 6rem;
+    width: 6em;
     height: auto;
     margin: 0 auto;
 }
 
 .site-header nav ul {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1em;
     list-style: none;
     margin: 0;
@@ -399,6 +432,7 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
 
  .site-header nav ul li:has(ul) a::after {
     content: "▼";
+    font-size: .5em;
     display: inline-block;
     margin-left: .5em;
  }
@@ -420,7 +454,7 @@ path.bg-yellow {fill:#FFFF42;}
     color: white;
     padding: 6em 1em;
 
-    a{
+    a {
         color: yellow
     }
 

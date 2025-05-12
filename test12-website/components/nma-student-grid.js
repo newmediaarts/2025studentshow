@@ -60,11 +60,9 @@ class NMAStudentGrid extends HTMLElement {
     list-style: none;
     padding-inline: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10vw, 350px));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 200px));
+    grid-gap: 1em;
     justify-content: center;
-    max-width: clamp(300px, 100vw - 2rem, 1200px);
-    margin-inline: auto; 
   }
 
   .student {
@@ -81,7 +79,7 @@ class NMAStudentGrid extends HTMLElement {
     top: 1em;
     left: 50%;
     transform: translateX(-50%) rotate(-15deg);
-    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    font-size: 1em);
   }
 
   .student__image {
