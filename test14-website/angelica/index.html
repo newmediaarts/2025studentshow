@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 New Media Arts Student Show</title>
+    <link rel="stylesheet" href="css/style.css?v=2.1">
+  </head>
+
+  <link rel="stylesheet" href="https://use.typekit.net/eyy0cqn.css">
+
+  <body class="page-designers">
+
+    <site-header></site-header>
+
+    <main>
+      <nma-student student-url="angelica" program="Interface Design"></nma-student>
+
+      <section id="students" class="student-portraits">
+        <h3>Check out the Designers</h3>
+        <!--Omit student by  the url in it's data object -->
+        <nma-student-grid category="interface" omit="/angelica"></nma-student-grid>
+
+        <br>&nbsp;<br>
+        <h3>See More Animators</h3>
+
+        <nma-student-grid category="animators" omit="/angelica"></nma-student-grid>
+
+      </section>
+      <section-map></section-map>
+      <section-about></section-about>
+    </main>
+
+    <site-footer></site-footer>
+
+    <effect-goo></effect-goo>
+
+    <!-- MAIN JS -->
+    <script src="js/script.js" type="module"></script>
+
+  </body>
+
+</html>
