@@ -25,9 +25,8 @@ A working repo for the NMA 2025 Student Show
 - [Test10 - Website](https://newmediaarts.github.io/2025studentshow/test10-website/index.html) - Chris adding Katheren's content - (via web components)
 - [Test11 - Website](https://newmediaarts.github.io/2025studentshow/test11-website/index.html) - Chris Melissa David Hanna Team Coding
 - [Test12 - Website](https://newmediaarts.github.io/2025studentshow/test12-website/index.html) - added portrait imgs
+- [Test13 - Website](https://newmediaarts.github.io/2025studentshow/test13-website/index.html) - Day Before Show Bug FIxes
 
 
 ## Road Map / To-dos
-- Need to add support for relative paths for sub pages
-- Need to add more web components to sub pages for each student (gabby and rheddie)
-- Need to fix hero h1's (currently absolute positioning and temp fix with /long-text class as a band-aid)
+- Need to fix hero text on mobile
