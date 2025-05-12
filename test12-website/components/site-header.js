@@ -16,6 +16,8 @@ class siteHeader extends HTMLElement {
                     <path class="bg-black" d="M52.42,0H0l175.14,174V0h-35.14v87L52.42,0Z" />
                     <path class="bg-magenta" d="M0,46.67v127.33h128.16L0,46.67Z" />
                 </svg>
+
+                
             </a>
         </div>
         <nav>

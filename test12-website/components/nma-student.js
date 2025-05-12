@@ -155,7 +155,7 @@ img, video {
 
 .profile__image {
   display: block;
-  width: 500px;
+  width: 300px;
   height: auto;
 }
 ` 

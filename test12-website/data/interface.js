@@ -108,7 +108,7 @@ export default [
         alt: 'Pitacus Chop Art',
       },
     ],
-    portfolio: 'http://emiris-portfolio-site.webflow.io/',
+    portfolio: 'https://www.emirimiyaji.com/',
     
   },
   {
@@ -181,30 +181,30 @@ export default [
     hoverImage: 'img/portrait-hanna-hover.webp',
     media: [
       {
-        src: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-project1.webp',
-        alt: 'Project 1',
+        src: 'img/HannaShibata-Project1.webp',
+        alt: 'Criminal Spin-off',
         type: 'image',
       },
       {
-        src: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-project2.webp',
-        alt: 'Project 2',
+        src: 'HannaShibata-Project2',
+        alt: 'Musica Sake',
         type: 'image',
       },
       {
-        src: 'https://nma.kapiolani.hawaii.edu/2025studentshow/img/gabby-abbey-project3.webm',
+        src: 'HannaShibata-Project3.webm',
         type: 'video',
-        alt: 'Gabby Abbey Video',
+        alt: 'S. Neil Fujita&apos;s Visionary Fusion',
       },
     ],
-    portfolio: 'https://www.gabbyabbey.com/',
+    portfolio: 'https://hannashibata.github.io/playground-2025/',
     social: [
       {
         label: 'linkedin',
-        url: 'https://www.linkedin.com/in/gabriellaabbey/'
+        url: 'https://www.linkedin.com/in/hannashibata/'
       },
       {
         label: 'instagram',
-        url: 'https://www.instagram.com/msgabbyabbey'
+        url: 'https://www.instagram.com/hanna.shibata/'
       }
 
     ]

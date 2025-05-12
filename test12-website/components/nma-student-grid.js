@@ -68,7 +68,7 @@ class NMAStudentGrid extends HTMLElement {
   }
 
   .student {
-    aspect-ratio: 2 /3;
+    aspect-ratio: 2 / 3;
     display: block;
     position: relative;
     color: inherit;

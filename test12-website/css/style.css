@@ -39,6 +39,15 @@
     --unit-medium: 2em;
     --unit-large: 4em;
 
+/* METAMORPHOSIS Brand Colors */
+    --bg-green: #00AE8F;
+    --bg-black: #001210;
+    --bg-magenta: #C51A7D;
+    --bg-yellow: #FFFF42;
+
+
+
+
 
 }
 
@@ -88,7 +97,7 @@ a {
 * {
     box-sizing: border-box;}
 
-img {
+img, video {
     max-width: 100%;
     height: auto;
 }
@@ -397,6 +406,10 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
     display: none;
  }
 
+path.bg-green {fill:#00AE8F;}
+path.bg-black {fill:#001210;}
+path.bg-magenta {fill:#C51A7D;}
+path.bg-yellow {fill:#FFFF42;}
 
 /* SECTIONS  */
 
