@@ -11,7 +11,7 @@ const styles = css `
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    max-height: 95svh;
+    max-height: 85svh;
 }
 
 .hero-box {
