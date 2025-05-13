@@ -619,17 +619,21 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
   display: grid;
   place-content: center;
   animation: animate-in .4s cubic-bezier(0,1,0,1) forwards;
-  transform: translatey(0);
+    transform: translate(0, 0);
   list-style: none;
   border-radius: 6em 0 6em 6em;
 }
 
+.nma-sitenav-togglenav ul {
+    transform: translate(100%, -100%);
+}
+
 @keyframes animate-in {
   0% {
-    transform: translatey(-100%);
+    transform: translate(100%, -100%);
   }
   100% {
-    transform: translatey(0);
+    transform: translate(0, 0);
   }
 }
 
