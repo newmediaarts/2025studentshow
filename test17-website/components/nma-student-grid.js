@@ -61,23 +61,25 @@ class NMAStudentGrid extends HTMLElement {
     padding-inline: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1.5em;
     justify-content: center;
     padding: 0;
     margin: 0;
   }
 
   .students li {
-    flex: 0 1 140px
+    flex: 0 1 140px;
+    margin-top: 1.5em;
+    margin-bottom: -1.5em;
   }
+
 
   .student {
     aspect-ratio: 2 / 3;
     display: block;
     position: relative;
     color: inherit;
-    border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: all 0.2s ease-in-out;
   }
   .student:hover {
@@ -86,7 +88,7 @@ class NMAStudentGrid extends HTMLElement {
 
   .student__name {
     position: absolute;
-    bottom: 15%;
+    top: 1em;
     left: 50%;
     width: 100%;
     translate: -50% -50%; 
@@ -108,6 +110,7 @@ class NMAStudentGrid extends HTMLElement {
     grid-row: 1;
     display: block;
     object-fit: cover;
+    border-radius: .5em;
   }
 
   .student__image:hover {
