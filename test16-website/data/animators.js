@@ -144,17 +144,17 @@ export default [
     hoverImage: 'img/portrait-austin-hover.webp', 
     media: [
       {
-        src: 'img/austin-ubongen-Project1.webp',
+        src: 'img/-AustinUbongen-project1.webp',
         alt: 'Project 1',
         type: 'image',
       },
       {
-        src: 'img/austin-ubongen-Project2.webm',
+        src: 'img/-AustinUbongen-project2.webm',
         alt: 'Project 2',
         type: 'video',
       },
       {
-        src: 'img/austin-ubongen-Project3.webm',
+        src: 'img/-AustinUbongen-project3.webm',
         alt: 'Project 3',
         type: 'video',
       },
@@ -168,17 +168,17 @@ export default [
     hoverImage: 'img/portrait-thomas-hover.webp', 
     media: [
       {
-        src: 'img/thomas-drown-Project1.webp',
+        src: 'img/ThomasDrown_project1.webp',
         alt: 'Project 1',
         type: 'image',
       },
       {
-        src: 'img/thomas-drown-Project2.webm',
+        src: 'img/ThomasDrown-project2.webm',
         alt: 'Project 2',
         type: 'video',
       },
       {
-        src: 'img/thomas-drown-Project3.webm',
+        src: 'img/ThomasDrown-project3.webm',
         alt: 'Project 3',
         type: 'video',
       },
