@@ -5,7 +5,6 @@ class sectionMap extends HTMLElement {
       <!-- MAP SECTION HTML GOES HERE -->
       <section id="map">
       <div class="container">
-      <div class="container">
         <h2 class="hide-visually">Event Location &amp; Directions</h2>
         <div class="row">
 
@@ -26,7 +25,7 @@ class sectionMap extends HTMLElement {
             <a href="http://maps.apple.com/?q=Kapiolani+Community+College" class="button">View Map</a>
 
           </div>
-
+        </div>
       </div>
       </section>
       

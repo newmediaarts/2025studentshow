@@ -89,8 +89,8 @@ const styles = css `
     font-size: clamp(2em, 5vw, 5em);
     font-weight: 600;
     line-height: 1;
-    color: var(--bg-green);
-    text-shadow: #FAFBE7 -0.4vw -0.4vw;
+    color: var(--bg-magenta);
+    text-shadow: #FAFBE7 -0.3vw -0.3vw;
     margin: 0;
     margin-top: .1em;
     margin-bottom: .1em;
@@ -102,7 +102,7 @@ const styles = css `
     font-size: clamp(1em, 2vw, 2.5em);
     line-height: 1;
     font-weight: 600;
-    text-shadow: #FAFBE7 0.2vw 0.2vw;
+    text-shadow: #FAFBE7 0.25vw 0.25vw;
     color: var(--bg-black);
     margin: 0;
 }

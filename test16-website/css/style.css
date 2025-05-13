@@ -272,6 +272,7 @@ img, video {
     text-shadow: var(--bg-black) 0.8vw 0, var(--bg-black) -0.8vw 0;
 }
 
+
 .hero .drop-shadow-b1 {
     color: transparent;
     text-shadow: var(--bg-green) 0 -0.4vw;
