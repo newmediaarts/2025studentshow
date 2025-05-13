@@ -259,7 +259,7 @@ export default [
     ],
   },
   {
-    name: 'Richard "Esco"',
+    name: 'Richard &ldquo;Esco&rdquo;',
     lastName: 'Escobar-Mo',
     url: 'esco',
     image: 'img/portrait-esco.webp',

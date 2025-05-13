@@ -26,8 +26,8 @@ A working repo for the NMA 2025 Student Show
 - [Test11 - Website](https://newmediaarts.github.io/2025studentshow/test11-website/index.html) - Chris Melissa David Hanna Team Coding
 - [Test12 - Website](https://newmediaarts.github.io/2025studentshow/test12-website/index.html) - added portrait imgs
 - [Test13 - Website](https://newmediaarts.github.io/2025studentshow/test13-website/index.html) - Day Before Show Bug FIxes
+- [Test14 - Website](https://newmediaarts.github.io/2025studentshow/test14-website/index.html) - fix logo, broken links, and more
 
 
 ## Road Map / To-dos
 - Need to fix hero box clipping on large landscape
-- fix logo colors on different color bg pages
