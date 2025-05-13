@@ -11,24 +11,25 @@
 
   <link rel="stylesheet" href="https://use.typekit.net/eyy0cqn.css">
 
-  <body class="page-designers">
+  <body class="page-animators">
 
     <site-header></site-header>
 
     <main>
       <nma-student student-url="thomas" program="Animation"></nma-student>
-
       <section id="students" class="student-portraits">
-        <h3>See More Animators</h3>
-        <!--Omit student by  the url in it's data object -->
-        <nma-student-grid category="animators" omit="thomas"></nma-student-grid>
-
+        <div class="anim">
+          <h3>See More Animators</h3>
+          <!--Omit student by  the url in it's data object -->
+          <nma-student-grid category="animators" omit="thomas"></nma-student-grid>
+        </div>
         <br>&nbsp;<br>
+        <div class="interface">
 
-        <h3>Check out the Designers</h3>
+          <h3>Check out the Designers</h3>
 
-        <nma-student-grid category="interface"></nma-student-grid>
-
+          <nma-student-grid category="interface"></nma-student-grid>
+        </div>
       </section>
       <section-map></section-map>
       <section-about></section-about>

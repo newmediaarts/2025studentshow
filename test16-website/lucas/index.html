@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <base href="../">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2025 New Media Arts Student Show</title>
-  <link rel="stylesheet" href="css/style.css?v=2.1">
-</head>
+  <head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 New Media Arts Student Show</title>
+    <link rel="stylesheet" href="css/style.css?v=2.1">
+  </head>
 
-<link rel="stylesheet" href="https://use.typekit.net/eyy0cqn.css">
-<body class="page-animators">
+  <link rel="stylesheet" href="https://use.typekit.net/eyy0cqn.css">
 
-  <site-header></site-header>
+  <body class="page-animators">
 
-  <main>
-    <nma-student student-url="lucas" program="Animation"></nma-student>
+    <site-header></site-header>
 
-    <section id="students" class="student-portraits">
-      <h3>See More Animators</h3>
-      <!--Omit student by  the url in it's data object -->
-      <nma-student-grid category="animators" omit="lucas"></nma-student-grid>
+    <main>
+      <nma-student student-url="lucas" program="Animation"></nma-student>
+      <section id="students" class="student-portraits">
+        <div class="anim">
+          <h3>See More Animators</h3>
+          <!--Omit student by  the url in it's data object -->
+          <nma-student-grid category="animators" omit="lucas"></nma-student-grid>
+        </div>
+        <br>&nbsp;<br>
+        <div class="interface">
 
-      <br>&nbsp;<br>
+          <h3>Check out the Designers</h3>
 
-      <h3>Check out the Designers</h3>
+          <nma-student-grid category="interface"></nma-student-grid>
+        </div>
+      </section>
+      <section-map></section-map>
+      <section-about></section-about>
+    </main>
 
-      <nma-student-grid category="interface"></nma-student-grid>
+    <site-footer></site-footer>
 
-    </section>
-    <section-map></section-map>
-    <section-about></section-about>
-  </main>
+    <effect-goo></effect-goo>
 
-  <site-footer></site-footer>
+    <!-- MAIN JS -->
+    <script src="js/script.js" type="module"></script>
 
-  <effect-goo></effect-goo>
-
-  <!-- MAIN JS -->
-  <script src="js/script.js" type="module"></script>
-
-</body>
+  </body>
 
 </html>

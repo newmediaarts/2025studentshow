@@ -242,7 +242,7 @@ img, video {
     line-height: 1;
     font-weight: 600;
     text-shadow: #FAFBE7 0.2vw 0.2vw;
-    color: var(--bg-magenta);
+    color: var(--bg-black);
     margin: 0;
 }
 
@@ -754,4 +754,14 @@ color: var(--bg-yellow)
 
 #film a:hover {
     color: var(--bg-green)
-    }
+}
+
+.interface {
+    background-color: var(--bg-magenta);
+    padding: 2em;
+}
+
+.anim {
+    background-color: var(--bg-green);
+    padding: 2em;
+}

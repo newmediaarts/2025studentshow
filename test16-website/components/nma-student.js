@@ -102,8 +102,8 @@ const styles = css `
     font-size: clamp(1em, 2vw, 2.5em);
     line-height: 1;
     font-weight: 600;
-    text-shadow: #FAFBE7 0.4vw 0.4vw;
-    color: var(--bg-magenta);
+    text-shadow: #FAFBE7 0.2vw 0.2vw;
+    color: var(--bg-black);
     margin: 0;
 }
 
@@ -135,14 +135,14 @@ const styles = css `
 
 .hero .drop-shadow-b1 {
     color: transparent;
-    text-shadow: var(--bg-green) 0 -0.4vw;
+    text-shadow: var(--bg-green) 0 -0.2vw;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-b2 {
     color: transparent;
-    text-shadow: var(--bg-magenta) 0 0.4vw;
+    text-shadow: var(--bg-magenta) 0 0.2vw;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
