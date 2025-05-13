@@ -582,15 +582,16 @@ html:has(.goo-background), body:has(.goo-background) { height: 100%; }
 
 .nma-sitenav-togglenav .nma-menu-button {
   text-align: right;
-  position: absolute;
-  top: 1em;
-  right: 1em;
+  position: relative;
+  /* top: 1em;
+  right: 1em; */
   z-index: 200;
 }
 
 /* HIDE THE DEFAULT MARKER */
 .nma-sitenav-togglenav .nma-menu-button::marker {
-  content: none;
+    color: transparent;
+    content: none;
 }
 .nma-sitenav-togglenav .nma-menu-button::-webkit-details-marker {
   display: none;
