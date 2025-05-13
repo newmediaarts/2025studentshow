@@ -1,0 +1,142 @@
+import interfaceStudents from '../data/interface.js';
+import animationStudents from '../data/animators.js';
+import {css, html} from './templates.js';
+
+class NMAStudentGrid extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+
+    let students = [...interfaceStudents, ...animationStudents];
+
+    const category = this.getAttribute('category');
+    const omit = this.getAttribute('omit');
+
+    // Render the students based on the category
+    if (category === 'interface') {
+      students = interfaceStudents;
+    }
+
+    if (category === 'animators') {
+      students = animationStudents;
+    }
+
+    // Sort the students by name alphabetically
+    students =  students.sort((a, b) => {
+      if (a.lastName < b.lastName) {
+        return -1;
+      }
+      if (a.lastName > b.lastName) {
+        return 1;
+      }
+      return 0;
+    })
+
+    // Filter out the student with the url that matches the omit attribute
+    if(omit) {
+      students = students.filter(student => {
+        return student.url !== omit;
+      });
+    }
+
+
+
+    const markup = html`<ul class="students">
+    ${students.map(student => html`
+    <li>
+      <a class="student" href="${student.url}" >
+        <div class="student__name">${student.name} ${student.lastName}</div>
+        <div class="student__image">
+          <img class="student_image__hover-image" src="${student.hoverImage}" alt="${student.name}" height="1500" width="1000">
+          <img class="student_image__image" src="${student.image}" alt="${student.name}" height="1500" width="1000">
+        </div>
+        </a>
+    </li>
+`).join('')}
+    </ul>`
+
+    const styles = css`
+  .students {
+    list-style: none;
+    padding-inline: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .students li {
+    flex: 0 1 140px;
+    margin-top: 1.5em;
+    margin-bottom: -1.5em;
+  }
+
+
+  .student {
+    aspect-ratio: 2 / 3;
+    display: block;
+    position: relative;
+    color: inherit;
+    /* overflow: hidden; */
+    transition: all 0.2s ease-in-out;
+  }
+  .student:hover {
+    transform: scale(1.04);
+  }
+
+  .student__name {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    width: 100%;
+    translate: -50% -50%; 
+    rotate: -15deg;
+    font-size: 1em);
+  }
+
+  .student__image {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .student__image img {
+    width: 100%;
+    height: 100%;
+    opacity: var(--image-opacity);
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    object-fit: cover;
+    border-radius: .5em;
+  }
+
+  .student__image:hover {
+    .student_image__image {
+    --image-opacity: 0;
+    transition: opacity 0.5s; 
+  }
+}
+
+
+`
+
+    const templateEl = document.createElement('template');
+    const styleEl = document.createElement('style');
+
+
+
+    styleEl.textContent = styles;
+    templateEl.innerHTML = markup;
+
+
+
+    this.shadowRoot.appendChild(styleEl);
+    this.shadowRoot.appendChild(templateEl.content.cloneNode(true));
+  }
+
+}
+
+customElements.define('nma-student-grid', NMAStudentGrid);
