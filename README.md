@@ -29,6 +29,7 @@ A working repo for the NMA 2025 Student Show
 - [Test14 - Website](https://newmediaarts.github.io/2025studentshow/test14-website/index.html) - fix logo, broken links, and more
 - [Test15 - Website](https://newmediaarts.github.io/2025studentshow/test15-website/index.html) - added index.php redirects to index.html
 - [Test16 - Website](https://newmediaarts.github.io/2025studentshow/test16-website/index.html) - fixing broken links
+- [Test17 - Website](https://newmediaarts.github.io/2025studentshow/test17-website/index.html) - more bug fixes and ui enhancements
 
 
 ## Road Map / To-dos
