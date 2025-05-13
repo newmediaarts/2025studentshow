@@ -229,7 +229,7 @@ img, video {
     font-weight: 600;
     line-height: 1;
     color: var(--bg-green);
-    text-shadow: #FAFBE7 -0.4vw -0.4vw;
+    text-shadow: #FAFBE7 -0.2vw -0.2vw;
     margin: 0;
     margin-top: .1em;
     margin-bottom: .1em;
@@ -241,7 +241,7 @@ img, video {
     font-size: clamp(1em, 2vw, 2.5em);
     line-height: 1;
     font-weight: 600;
-    text-shadow: #FAFBE7 0.4vw 0.4vw;
+    text-shadow: #FAFBE7 0.2vw 0.2vw;
     color: var(--bg-magenta);
     margin: 0;
 }
@@ -692,9 +692,10 @@ footer {
 }
 .page-animators .nma-logo {
     .bg-green {
-        fill: #FFFF42;
+        fill: var(--bg-yellow);
     }
 }
+
 .page-designers {
     /* background: var(--bg-magenta); */
     --color-body-background: var(--bg-magenta);
@@ -711,7 +712,7 @@ footer {
 
 .page-designers .nma-logo {
     .bg-magenta {
-        fill: #FFFF42;
+        fill: var(--bg-yellow);
     }
 }
 
@@ -752,5 +753,5 @@ color: var(--bg-yellow)
 }
 
 #film a:hover {
-    color: var(--bg-magenta)
+    color: var(--bg-green)
     }

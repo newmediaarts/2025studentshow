@@ -116,14 +116,14 @@ const styles = css `
 
 .hero .drop-shadow-a1 {
     color: transparent;
-    text-shadow: var(--color1) -0.8vw 0;
+    text-shadow: var(--color3) -0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-a2 {
     color: transparent;
-    text-shadow: var(--color2) 0.8vw 0;
+    text-shadow: var(--color1) 0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
@@ -166,6 +166,7 @@ const styles = css `
     font-stretch: semi-condensed;
     z-index: 5;
 }
+
 
 .student-two-col {
     padding: 2rem;
@@ -227,7 +228,7 @@ img, video {
     background-color: var(--bg-green);
     color: black;
 }
-
+    
 ` 
 
 class NMAStudent extends HTMLElement {
