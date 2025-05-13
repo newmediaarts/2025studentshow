@@ -30,6 +30,8 @@ A working repo for the NMA 2025 Student Show
 - [Test15 - Website](https://newmediaarts.github.io/2025studentshow/test15-website/index.html) - added index.php redirects to index.html
 - [Test16 - Website](https://newmediaarts.github.io/2025studentshow/test16-website/index.html) - fixing broken links
 - [Test17 - Website](https://newmediaarts.github.io/2025studentshow/test17-website/index.html) - more bug fixes and ui enhancements
+- [Test18 - Website](https://newmediaarts.github.io/2025studentshow/test18-website/index.html) - melissa fixed broken / missing content
+- [Test19 - Website](https://newmediaarts.github.io/2025studentshow/test19-website/index.html) - chris's final day-of-the-show adjustments
 
 
 ## Road Map / To-dos
@@ -39,8 +41,8 @@ A working repo for the NMA 2025 Student Show
     - ~~need to fix goo on tablet (currently janky on iPad, causing lag and poor scrolling)~~
     - Finish the color shadows w/ custom properties
 - Home Page
-    - need to fix the two big magenta and green designers and animators button text on tablets (text currently expands outside of button)
+    - need to test the two big magenta and green designers and animators button text on tablets (last test the text expanded outside of button)
 - Indiv Student Pages
     - Add links to demo reels for the animators (do they have links?)
-    - need to resolve the lack of a poster imag (on mobile), by either adding manually or simply ~~adding a white outline around the video elements (as a quick fix)~~
+    - need to resolve the lack of a poster img (on mobile), by either adding manually or simply ~~adding a white outline around the video elements (as a quick fix)~~
     - ~~possible UX enhancement: consider either moving or adding an additional Visit ___’s  Website CTA button to the bottom of each student’s page after they scroll to the bottom (just past their last project visual). Perhaps only on mobile?~~å 
