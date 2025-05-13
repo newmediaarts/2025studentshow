@@ -4,6 +4,7 @@ class siteHeader extends HTMLElement {
         
         <!-- COMPONENT HTML GOES HERE -->
         <header class="site-header">
+
           <div id="site-logo">
             <a href="index.html">
                 <svg class="nma-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 591 174">
@@ -20,7 +21,8 @@ class siteHeader extends HTMLElement {
                 
             </a>
         </div>
-        <nav>
+
+        <!-- <nav class="morph-site-nav"
             <ul>
                 <li><a href="index.html#students">Graduates</a>
                     <ul>
@@ -31,7 +33,33 @@ class siteHeader extends HTMLElement {
                 <li><a href="animators/index.html#film"><span class="hide-visually-on-smallx">Short </span>Film</a></li>
                 <li><a href="index.html#map">About</a></li>
             </ul>
-        </nav>
+        </nav> -->
+
+        <nav class="nma-sitenav-togglenav">
+            <details>
+
+              <!-- NMA TOGGLE NAV MENU BUTTON -->
+              <summary class="nma-menu-button">
+                <svg class="nma-navicon" width="30" height="24">
+                  <rect class="nma-navicon-top" x="0" y="0" height="4" width="30"></rect>
+                  <rect class="nma-navicon-middle" x="0" y="10" height="4" width="30"></rect>
+                  <rect class="nma-navicon-bottom" x="0" y="20" height="4" width="30"></rect>
+                </svg>
+                <span class="nma-hide-visually">Menu</span>
+              </summary>
+
+              <!-- NMA TOGGLE NAV CONTENTS -->
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="animators/index.html">Animators</a></li>
+                <li><a href="designers/index.html">Designers</a></li>
+                <li><a href="animators/index.html#film"><span class="hide-visually-on-smallx">Short </span>Film</a></li>
+                <li><a href="index.html#map">Event Info</a></li>
+            </ul>
+
+            </details>
+          </nav>
+
         </header>
         
       `;

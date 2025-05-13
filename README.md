@@ -33,12 +33,14 @@ A working repo for the NMA 2025 Student Show
 
 
 ## Road Map / To-dos
+- Site header: 
+    - ~~add a proper three bar navicon w menu button to open and close a mobile toggle nav.~~ 
 - Hero:
-    - Need to fix hero box clipping on large landscape
+    - ~~need to fix goo on tablet (currently janky on iPad, causing lag and poor scrolling)~~
     - Finish the color shadows w/ custom properties
-    - Fix the h2 and h3 colors
 - Home Page
-    - Add hover state to the big Designers and Animators Buttons
+    - need to fix the two big magenta and green designers and animators button text on tablets (text currently expands outside of button)
 - Indiv Student Pages
-    - Add links to demo reels for the animators
-    - Add links to social media links (eg instagram, inkedin) for all students
+    - Add links to demo reels for the animators (do they have links?)
+    - need to resolve the lack of a poster imag (on mobile), by either adding manually or simply ~~adding a white outline around the video elements (as a quick fix)~~
+    - ~~possible UX enhancement: consider either moving or adding an additional Visit ___’s  Website CTA button to the bottom of each student’s page after they scroll to the bottom (just past their last project visual). Perhaps only on mobile?~~å 

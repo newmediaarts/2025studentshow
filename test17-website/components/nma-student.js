@@ -14,11 +14,34 @@ const styles = css `
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    max-height: 85svh;
+    /* max-height: 85svh; */
+    max-height: 100svh;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-body-background);
+    z-index: -1;
+}
+
+.page-animators .hero::before {
+    --color-body-background: var(--bg-green);
+    --color-hero-background: var(--bg-green);
+    background-color: var(--bg-green);
 }
 
 .page-animators .hero {
     --color1: var(--bg-yellow);
+}
+
+.page-designers .hero::before {
+    --color-body-background: var(--bg-magenta);
+    --color-hero-background: var(--bg-magenta);
+    background-color: var(--bg-magenta);
 }
 
 .page-designers .hero {
@@ -30,18 +53,25 @@ const styles = css `
     width: fit-content;
     /* max-width: 100svh; */
     margin-top: 25%;
-    padding-bottom: 10%;
+    margin-bottom: 18%;
     margin-left: 20vw;
     margin-right: 8vw;
     rotate: -15deg;
     /* border: 2px solid red; */
     translate: 0 -20%;
 }
+
+.page-animators .hero-box {
+    margin-top: 20%;
+}
 @media (max-width: 767px) {
     .hero-box {
         translate: 0 -5%;
         margin-top: 12em;
-        padding-bottom: 8em;
+        margin-bottom: 8em;
+    }
+    .page-animators .hero-box {
+        margin-top: calc(8em + 10%);
     }
 }
 
@@ -49,7 +79,7 @@ const styles = css `
     .hero-box {
         translate: 0 0;
         margin-top: 10em;
-        padding-bottom: 5em;
+        margin-bottom: 5em;
     }
 }
 
@@ -60,6 +90,12 @@ const styles = css `
     text-transform: uppercase;
     position: relative;
     line-height: .8;
+}
+.page-home .hero .title {
+    font-size: clamp(10vw, 15vw, 10em);
+}
+.page-animators .title {
+    font-size: clamp(2em, 9vw, 14em);
 }
 
 .hero .text-vertical {
@@ -85,12 +121,11 @@ const styles = css `
 .hero h2 {
     font-family: "roc-grotesk-variable", sans-serif;
     font-stretch: condensed;
-    font-weight: 750;
-    font-size: clamp(2em, 5vw, 5em);
+    font-size: clamp(1.2em, 5vw, 5em);
     font-weight: 600;
     line-height: 1;
-    color: var(--bg-magenta);
-    text-shadow: #FAFBE7 -0.3vw -0.3vw;
+    color: var(--bg-green);
+    text-shadow: #FAFBE7 -0.2vw -0.2vw;
     margin: 0;
     margin-top: .1em;
     margin-bottom: .1em;
@@ -102,7 +137,7 @@ const styles = css `
     font-size: clamp(1em, 2vw, 2.5em);
     line-height: 1;
     font-weight: 600;
-    text-shadow: #FAFBE7 0.25vw 0.25vw;
+    text-shadow: #FAFBE7 0.2vw 0.2vw;
     color: var(--bg-black);
     margin: 0;
 }
@@ -116,14 +151,14 @@ const styles = css `
 
 .hero .drop-shadow-a1 {
     color: transparent;
-    text-shadow: var(--color3) -0.8vw 0;
+    text-shadow: var(--color1) -0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-a2 {
     color: transparent;
-    text-shadow: var(--color1) 0.8vw 0;
+    text-shadow: var(--color2) 0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
@@ -133,16 +168,17 @@ const styles = css `
     text-shadow: var(--bg-black) 0.8vw 0, var(--bg-black) -0.8vw 0;
 }
 
+
 .hero .drop-shadow-b1 {
     color: transparent;
-    text-shadow: var(--bg-green) 0 -0.2vw;
+    text-shadow: var(--bg-green) 0 -0.4vw;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-b2 {
     color: transparent;
-    text-shadow: var(--bg-magenta) 0 0.2vw;
+    text-shadow: var(--bg-magenta) 0 0.4vw;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
@@ -217,14 +253,23 @@ img, video {
   margin-bottom: 2rem;
 }
 
+.media h3.more {
+margin-top: 2em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 /* BUTTONS */
+.buttons {
+    text-align: center;
+}
 .button {
     background-color: var(--bg-yellow);
     color: black;
     display: inline-block;
     padding: 1em 2em;
     border-radius: .5em;
-    margin: 1.5em .5em .5em 0;
+    margin: .5em .5em .5em 0;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -254,6 +299,16 @@ img, video {
 .social-icon.linkedin {
     background-image: url(img/icon-linkedin.png);
     background-size: contain
+}
+
+.media__item,
+.profile__image {
+border-radius: 1em;
+overflow: hidden;
+}
+
+.media__video {
+    background-color: rgb(255 255 255 / .1);
 }
     
 ` 
@@ -321,9 +376,9 @@ class NMAStudent extends HTMLElement {
                     </div>
                     <h1>${student.name} ${student.lastName}</h1>
                     <p>${program}</p>
-                    <div>
+                    <!-- <div>
                         <a class="button" href="${student.portfolio}">Website</a>
-                    </div>
+                    </div> -->
                     <div class="social-icons">
                         ${student.social ? student.social.map(social => html`
                             <a class="social-icon ${social.label}" href="${social.url}"><span>${social.label}<span></a>
@@ -342,6 +397,11 @@ class NMAStudent extends HTMLElement {
                     ` : html`<img class="media__image" src="${media.src}" alt="${media.alt}" height="500" width="500">`}
                     </div>
                 `).join('')}
+
+                    <h3 class="more">Want to see more? </h3>
+                    <div class="buttons">
+                        <a class="button" href="${student.portfolio}">Visit ${student.name}'s Website</a>
+                    </div>
                 </div>
             
             </div>
