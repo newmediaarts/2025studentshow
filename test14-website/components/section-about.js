@@ -11,7 +11,7 @@ class sectionAbout extends HTMLElement {
           <div class="one-half">
 
             <h2>Thank you!</h2>
-            <p>Through trial and error, deadlines and critiques, and a lot of long nights - we want to say a big thank you to the people who believed in us.</p>
+            <p>Through trial and error, deadlines and critiques, and a lot of long nights - we want to say a big thank you to the people who believed in&nbsp;us.</p>
             <ul>
                 <li>Adam Moura</li>
                 <li>Emily Moody</li>

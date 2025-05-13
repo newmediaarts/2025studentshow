@@ -19,7 +19,7 @@ const styles = css `
     width: fit-content;
     /* max-width: 100svh; */
     margin-top: 25%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     margin-left: 20vw;
     margin-right: 8vw;
     rotate: -15deg;

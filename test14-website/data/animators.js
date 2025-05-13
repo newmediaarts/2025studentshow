@@ -84,6 +84,11 @@ export default [
     hoverImage: 'img/portrait-noelani-hover.webp', 
     media: [
       {
+        src: 'img/Noelani-Fortin-demoreel.webm',
+        alt: 'Demo Reel',
+        type: 'video',
+      },
+      {
         src: 'img/Noelani-Fortin-Project1.webm',
         alt: 'Project 1',
         type: 'video',
@@ -97,11 +102,6 @@ export default [
         src: 'img/Noelani-Fortin-Project3.webp',
         alt: 'Project 3',
         type: 'image',
-      },
-      {
-        src: 'img/Noelani-Fortin-demoreel.webm',
-        alt: 'Demo Reel',
-        type: 'video',
       },
     ],
     portfolio: 'https://fortinnl.wixsite.com/noelaniforitn',
@@ -144,9 +144,9 @@ export default [
     hoverImage: 'img/portrait-austin-hover.webp', 
     media: [
       {
-        src: 'img/austin-ubongen-Project1.webm',
+        src: 'img/austin-ubongen-Project1.webp',
         alt: 'Project 1',
-        type: 'video',
+        type: 'image',
       },
       {
         src: 'img/austin-ubongen-Project2.webm',
@@ -154,9 +154,9 @@ export default [
         type: 'video',
       },
       {
-        src: 'img/austin-ubongen-Project3.webp',
+        src: 'img/austin-ubongen-Project3.webm',
         alt: 'Project 3',
-        type: 'image',
+        type: 'video',
       },
     ],
   },
@@ -217,6 +217,11 @@ export default [
     hoverImage: 'img/portrait-race-hover.webp', 
     media: [
       {
+        src: 'img/Race-Nacapuy-demoreel.webm',
+        alt: 'DemoReel',
+        type: 'video',
+      },
+      {
         src: 'img/Race-Nacapuy-Project1.webp',
         alt: 'Project 1',
         type: 'image',
@@ -229,11 +234,6 @@ export default [
       {
         src: 'img/Race-Nacapuy-Project3.webm',
         alt: 'Project 3',
-        type: 'video',
-      },
-      {
-        src: 'img/Race-Nacapuy-demoreel.webm',
-        alt: 'DemoReel',
         type: 'video',
       },
     ],
