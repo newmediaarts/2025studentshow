@@ -144,17 +144,17 @@ export default [
     hoverImage: 'img/portrait-austin-hover.webp', 
     media: [
       {
-        src: 'img/-AustinUbongen-project1.webp',
+        src: 'img/AustinUbongen-project1.webp',
         alt: 'Project 1',
         type: 'image',
       },
       {
-        src: 'img/-AustinUbongen-project2.webm',
+        src: 'img/AustinUbongen-project2.webm',
         alt: 'Project 2',
         type: 'video',
       },
       {
-        src: 'img/-AustinUbongen-project3.webm',
+        src: 'img/AustinUbongen-project3.webm',
         alt: 'Project 3',
         type: 'video',
       },
@@ -173,12 +173,12 @@ export default [
         type: 'image',
       },
       {
-        src: 'img/ThomasDrown-project2.webm',
+        src: 'img/ThomasDrown_project2.webm',
         alt: 'Project 2',
         type: 'video',
       },
       {
-        src: 'img/ThomasDrown-project3.webm',
+        src: 'img/ThomasDrown_project3.webm',
         alt: 'Project 3',
         type: 'video',
       },
