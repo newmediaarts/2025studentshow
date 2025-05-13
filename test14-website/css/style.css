@@ -44,11 +44,6 @@
     --bg-black: #001210;
     --bg-magenta: #C51A7D;
     --bg-yellow: #FFFF42;
-
-
-
-
-
 }
 
 html, body {
@@ -105,7 +100,7 @@ img, video {
 /* BUTTONS */
 .button {
     background-color: var(--bg-yellow);
-    color: black;
+    color: var(--bg-black);
     display: inline-block;
     padding: 1em 2em;
     border-radius: .5em;
@@ -115,7 +110,7 @@ img, video {
 }
 .button:hover {
     background-color: var(--bg-green);
-    color: black;
+    color: var(--bg-black);
 }
 
 /* HELPERS */
@@ -204,7 +199,7 @@ img, video {
     font-size: clamp(2em, 5vw, 5em);
     font-weight: 600;
     line-height: 1;
-    color: #00AE8F;
+    color: var(--bg-green);
     text-shadow: #FAFBE7 -0.4vw -0.4vw;
     margin: 0;
     margin-top: .1em;
@@ -218,46 +213,46 @@ img, video {
     line-height: 1;
     font-weight: 600;
     text-shadow: #FAFBE7 0.4vw 0.4vw;
-    color: #C51A7D;
+    color: var(--bg-magenta);
     margin: 0;
 }
 
 
 .hero .text-black {
     position: relative;
-    color: #000000;
+    color: var(--bg-black);
     z-index: 3;
 }
 
 .hero .drop-shadow-a1 {
     color: transparent;
-    text-shadow: #00AE8F -0.8vw 0;
+    text-shadow: var(--bg-green) -0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-a2 {
     color: transparent;
-    text-shadow: #C51A7D 0.8vw 0;
+    text-shadow: var(--bg-magenta) 0.8vw 0;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
 
 .hero .drop-shadow-a-bg {
-    color: black;
-    text-shadow: #000000 0.8vw 0, #000000 -0.8vw 0;
+    color: var(--bg-black);
+    text-shadow: var(--bg-black) 0.8vw 0, var(--bg-black) -0.8vw 0;
 }
 
 .hero .drop-shadow-b1 {
     color: transparent;
-    text-shadow: #00AE8F 0 -0.4vw;
+    text-shadow: var(--bg-green) 0 -0.4vw;
     mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
 .hero .drop-shadow-b2 {
     color: transparent;
-    text-shadow: #C51A7D 0 0.4vw;
+    text-shadow: var(--bg-magenta) 0 0.4vw;
     mix-blend-mode: plus-lighter;
     z-index: 2;
 }
@@ -272,7 +267,7 @@ img, video {
 .hero .text-outline {
     position: relative;
     color: transparent;
-    -webkit-text-stroke: black 2px;
+    -webkit-text-stroke: var(--bg-black)2px;
     z-index: 6;
 }
 
@@ -477,13 +472,13 @@ path.bg-yellow {fill:#FFFF42;}
 
 #students,
 ::part(students){
-    background: black;
+    background: var(--bg-black);
     /* mix-blend-mode: difference; */
     color: white;
     padding: 6em 1em;
 
     a {
-        color: yellow
+        color: var(--bg-yellow);
     }
 
 
@@ -515,7 +510,7 @@ path.bg-yellow {fill:#FFFF42;}
     font-size: clamp(2em, 5vw, 5em);
     font-weight: 600;
     line-height: 1;
-    color: #00AE8F;
+    color: var(--bg-green);
     text-shadow: #FAFBE7 -0.4rem -0.4rem;
     text-transform: uppercase;
     margin: 0;
@@ -573,7 +568,7 @@ path.bg-yellow {fill:#FFFF42;}
     /* rotate: 15deg; */
     /* margin-inline: auto; */
     padding: 6em 1em;
-    background-color: black;
+    background-color: var(--bg-black);
 }
 
 .studentbox {
@@ -583,7 +578,7 @@ path.bg-yellow {fill:#FFFF42;}
 
 /* EVENT SECTION */
 #map {
-    background: black;
+    background: var(--bg-black);
     color: white;
     padding: 6em 1em;
 }
@@ -599,21 +594,21 @@ address a:hover{
 } */
 /* ABOUT SECTION */
 #about {
-    background: black;
+    background: var(--bg-black);
     color: white;
     padding: 6em 1em;
 }
 
 /* FILM SECTION */
 #film {
-    background: black;
+    background: var(--bg-black);
     color: white;
     padding: 6em 1em;
 }
 
 /* FOOTER */
 footer {
-    background: black;
+    background: var(--bg-black);
     color: white;
     padding: 6em 1em;
 }
@@ -621,19 +616,41 @@ footer {
 /* SUB PAGES */
 
 .page-animators {
-    /* background: #00AE8F; */
-    --color-body-background: #00AE8F;
+    /* background: var(--bg-green); */
+    --color-body-background: var(--bg-green);
     color: white;
 }
+.page-animators .nma-logo {
+    .bg-green {
+        fill: #FFFF42;
+    }
+}
 .page-designers {
-    /* background: #C51A7D; */
-    --color-body-background: #C51A7D;
+    /* background: var(--bg-magenta); */
+    --color-body-background: var(--bg-magenta);
     color: white;
 }
 
+.page-designers a.button:hover{
+    background-color: var(--bg-magenta);
+}
+
+.page-designers a.student{
+    color: var(--bg-magenta);
+}
+
+.page-designers .nma-logo {
+    .bg-magenta {
+        fill: #FFFF42;
+    }
+}
+
+
+
 /* FOOTER  */
 .site-footer {
-    background: black;
+    background: var(--bg-black);
+    padding: 1em;
 }
 /* FOOTER SOCIAL MEDIA ICONS */
 
@@ -659,3 +676,11 @@ footer {
 .socialmedia a:hover svg {
     fill: rgb(255 255 255 / 1);
 }
+
+#film a {
+color: var(--bg-yellow)
+}
+
+#film a:hover {
+    color: var(--bg-magenta)
+    }

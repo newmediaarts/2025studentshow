@@ -197,17 +197,18 @@ export default [
       },
     ],
     portfolio: 'https://hannashibata.github.io/playground-2025/',
-    social: [
+    links: [
       {
-        label: 'linkedin',
-        url: 'https://www.linkedin.com/in/hannashibata/'
+        label: "linkedin",
+        iconClass: "fa-linkedin",
+        href: 'https://www.linkedin.com/in/hannashibata/'
       },
       {
-        label: 'instagram',
-        url: 'https://www.instagram.com/hanna.shibata/'
-      }
-
-    ]
+        label: "Instagram",
+        iconClass: "fa-instagram",
+        href: 'https://www.instagram.com/hanna.shibata/'
+      },
+    ],
   }
 ]
 

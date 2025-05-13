@@ -5,7 +5,7 @@ class siteFooter extends HTMLElement {
       <!-- COMPONENT HTML GOES HERE -->
       <footer class="site-footer">
       
-      <div class="container">
+     <!--  <div class="container"> -->
           
         <div class="social-icons">
         <ul class="socialmedia">
@@ -70,8 +70,7 @@ class siteFooter extends HTMLElement {
         </ul>
       </div>
 
-      </div>
-
+     <!--  </div"> -->
       </footer>
         
       `;

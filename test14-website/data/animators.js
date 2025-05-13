@@ -32,9 +32,9 @@ export default [
         type: 'video',
       },
       {
-        src: 'img/maya-bautista-project6.webm',
+        src: 'img/maya-bautista-project6.webp',
         alt: 'Project 6',
-        type: 'video',
+        type: 'image',
       },
     ],
     portfolio: 'https://maize.cargo.site/',
