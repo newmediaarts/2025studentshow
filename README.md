@@ -27,7 +27,16 @@ A working repo for the NMA 2025 Student Show
 - [Test12 - Website](https://newmediaarts.github.io/2025studentshow/test12-website/index.html) - added portrait imgs
 - [Test13 - Website](https://newmediaarts.github.io/2025studentshow/test13-website/index.html) - Day Before Show Bug FIxes
 - [Test14 - Website](https://newmediaarts.github.io/2025studentshow/test14-website/index.html) - fix logo, broken links, and more
+- [Test15 - Website](https://newmediaarts.github.io/2025studentshow/test15-website/index.html) - added index.php redirects to index.html
 
 
 ## Road Map / To-dos
-- Need to fix hero box clipping on large landscape
+- Hero:
+    - Need to fix hero box clipping on large landscape
+    - Finish the color shadows w/ custom properties
+    - Fix the h2 and h3 colors
+- Home Page
+    - Add hover state to the big Designers and Animators Buttons
+- Indiv Student Pages
+    - Add links to demo reels for the animators
+    - Add links to social media links (eg instagram, inkedin) for all students
