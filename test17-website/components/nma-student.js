@@ -294,17 +294,17 @@ margin-top: 2em;
     display: none;}
 .social-icon.instagram {
     background-image: url(img/icon-instagram.png);
-    background-size: contain
+    background-size: contain;
 }
 .social-icon.linkedin {
     background-image: url(img/icon-linkedin.png);
-    background-size: contain
+    background-size: contain;
 }
 
 .media__item,
 .profile__image {
-border-radius: 1em;
-overflow: hidden;
+    order-radius: 1em;
+    overflow: hidden;
 }
 
 .media__video {
