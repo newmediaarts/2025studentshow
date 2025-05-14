@@ -97,6 +97,12 @@ img, video {
     max-width: 100%;
     height: auto;
 }
+/* PLACEHOLDER / GHOST FOR MOBILE VIDEOS */
+.media__video {
+    background-color: rgb(255 255 255 / .1);
+    border-radius: .5em;
+    /* overflow: hidden; */
+}
 
 .caps {
     text-transform: uppercase;

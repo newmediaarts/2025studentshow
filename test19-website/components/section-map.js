@@ -23,7 +23,7 @@ class sectionMap extends HTMLElement {
           </div>
 
           <div class="one-half">
-            <img src="img/campusmap.svg" alt="Map of KCC" width="1280" height="1280">
+            <a href="http://maps.apple.com/?q=Kapiolani+Community+College"><img src="img/campusmap.svg" alt="Map of KCC" width="1280" height="1280"></a>
           </div>
 
         </div>
