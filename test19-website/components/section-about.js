@@ -56,6 +56,8 @@ class sectionAbout extends HTMLElement {
               <li>Hanna Shibata</li>
             </ul>
 
+            <p>And thanks to Michael Fiocco and Maya Bautista for being our emcees!</p>
+
 
           </div>
 
