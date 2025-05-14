@@ -12,7 +12,7 @@ class sectionAbout extends HTMLElement {
 
             <h2>About the NMA Student Show</h2>
 
-            <p>This is the student show website for tje annual Kapi'olani Community College New Media Arts student show event. showcases the demo reels and portfolio websites from our talented animation and interface design students. There is also a screening of the annual practicum animated short film. Enjoy!</p>
+            <p>This is the event website for the annual Kapi'olani Community College New Media Arts student show showcasing the demo reels and portfolio websites from graduating animation and interface design students. One of the key features of the event is the screening of the practicum animated short film. Enjoy!</p>
 
           </div>
 
@@ -23,7 +23,7 @@ class sectionAbout extends HTMLElement {
           <div class="one-half">
 
             <h2>Mahalo!</h2>
-            <p>Thank you for joining us to celebrate the NMA graduating Class of '25! Through trial and error, deadlines and critiques, and a lot of long nights - we also want to say a big thank you to the people who believed in&nbsp;us.</p>
+            <p>Thank you for joining us to celebrate the graduating NMA class of '25! Through trial and error, deadlines and critiques, and a lot of long nights - we also want to say a big thank you to the people who believed in&nbsp;us.</p>
             <ul>
                 <li>Adam Moura</li>
                 <li>Emily Moody</li>
@@ -46,7 +46,7 @@ class sectionAbout extends HTMLElement {
           <div class="one-half">
 
             <h2>Creators</h2>
-            <p>Shout out to the team who helped make the student show happen! Special thanks to Chris Gargiulo, Melissa Lum, and David Efhan for helping us to code this website!</p>
+            <p>Shout out to the team who helped make the student show happen! Special thanks to Chris Gargiulo, Melissa Lum, and David Efhan for helping us to code this&nbsp;website!</p>
             <ul>
               <li>Gabriella Abbey</li>
               <li>Emmanuel Correa</li>
@@ -62,7 +62,7 @@ class sectionAbout extends HTMLElement {
         </div>
 
             <h2>About KCC New Media Arts</h2>
-            <p>New Media Arts (NMA) is a two year AS degree program located at Kapi&#699;olani Community College (KapCC) in Honolulu, Hawai&apos;i. The NMA mission is to prepare students for employment in the fields of Interface Design and Animation.</p>
+            <p>New Media Arts (NMA) is a two year AS degree program located at Kapi&#699;olani Community College (KapCC) in Honolulu, Hawai&apos;i. The NMA mission is to prepare students for employment in the fields of Interface Design and&nbsp;Animation.</p>
 
             <a class="button" href="https://nma.kapiolani.hawaii.edu/index.html">Check out the NMA Website</a>
             <a class="button" href="https://www.kapiolani.hawaii.edu/">Go to the KCC Website</a>
