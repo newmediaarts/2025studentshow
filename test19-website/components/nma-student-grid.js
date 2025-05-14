@@ -59,16 +59,18 @@ class NMAStudentGrid extends HTMLElement {
   .students {
     list-style: none;
     padding-inline: 0;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1.5em;
     justify-content: center;
-    padding: 0;
+    padding: 0 1em;
     margin: 0;
   }
 
   .students li {
-    flex: 0 1 140px;
+    /* flex: 0 1 140px; */
     margin-top: 1.5em;
     margin-bottom: -1.5em;
   }
@@ -94,6 +96,14 @@ class NMAStudentGrid extends HTMLElement {
     translate: -50% -50%; 
     rotate: -15deg;
     font-size: 1em);
+    /* border: .5px solid white; */
+    border-radius: .5em;
+    display: block;
+    width: 75%;
+    padding: .25em;
+    background-color: var(--bg-yellow);
+    color: black;
+    z-index: 100;
   }
 
   .student__image {

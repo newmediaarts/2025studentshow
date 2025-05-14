@@ -205,7 +205,7 @@ const styles = css `
 
 
 .student-two-col {
-    padding: 2rem;
+    padding: 2em 1.5em;
 }
 @media (min-width: 768px) {
     .student-two-col {
@@ -390,7 +390,7 @@ class NMAStudent extends HTMLElement {
                 ${student.media.map(media => html`
                     <div class="media__item"> 
                     ${media.type === 'video' ? html`
-                        <video class="media__video" controls>
+                        <video class="media__video" poster="${media.poster}" controls>
                             <source src="${media.src}" type="video/webm">
                             Your browser does not support the video tag.
                         </video>

@@ -18,8 +18,9 @@ export default [
       },
       {
         src: 'img/gabby-abbey-project3.webm',
-        type: 'video',
         alt: 'Gabby Abbey Video',
+        type: 'video',
+        poster: '',
       },
     ],
     portfolio: 'https://www.gabbyabbey.com/',
@@ -76,6 +77,7 @@ export default [
         src: 'img/emmanual-correa-project2.webm',
         alt: 'TERGA',
         type: 'video',
+        poster: '',
       },
       {
         src: 'img/emmanual-correa-project3.webp',
@@ -104,8 +106,8 @@ export default [
       },
       {
         src: 'img/emiri-miyaji-project03.webm',
-        type: 'video',
         alt: 'Pitacus Chop Art',
+        poster: '',
       },
     ],
     portfolio: 'https://www.emirimiyaji.com/',
@@ -158,6 +160,7 @@ export default [
         src: 'img/michaelfiocco-project2.webm',
         alt: 'Groov Donuts',
         type: 'video',
+        poster: '',
       },
       {
         src: 'img/michaelfiocco-project3.webp',
@@ -192,8 +195,9 @@ export default [
       },
       {
         src: 'img/HannaShibata-Project3.webm',
-        type: 'video',
         alt: 'S. Neil Fujita&apos;s Visionary Fusion',
+        type: 'video',
+        poster: '',
       },
     ],
     portfolio: 'https://hannashibata.github.io/playground-2025/',
