@@ -203,6 +203,54 @@ const styles = css `
     z-index: 5;
 }
 
+.hero .text-vertical .title {
+    translate: -100% 0; opacity: 0;
+    animation: hero-text-vertical-slide-in .3s cubic-bezier(0, 1, 1, 1) .6s forwards;
+}
+@keyframes hero-text-vertical-slide-in {
+    100% { opacity: 1;translate: 0 0; }
+}
+
+.hero .text-stack .title:nth-child(1) {
+    translate: -100% 0; opacity: 0;
+    animation: hero-text-stack-1-slide-in .4s cubic-bezier(0, 1, 1, 1) forwards;
+}
+@keyframes hero-text-stack-2-slide-in {
+    100% { opacity: 1; translate: 0 0; }
+}
+
+.hero .text-stack .title:nth-child(2) {
+    translate: -100% 0; opacity: 0;
+    animation: hero-text-stack-2-slide-in .4s cubic-bezier(0, 1, 1, 1) .2s forwards;
+}
+@keyframes hero-text-stack-3-slide-in {
+    100% { opacity: 1; translate: 0 0; }
+}
+
+.hero .text-stack .title:nth-child(3) {
+    translate: -100% 0; opacity: 0;
+    animation: hero-text-stack-3-slide-in .4s cubic-bezier(0, 1, 1, 1) .4s forwards;
+}
+@keyframes hero-text-stack-1-slide-in {
+    100% { opacity: 1; translate: 0 0; }
+}
+
+.hero h2 {
+    translate: 100% 0; opacity: 0;
+    animation: hero-h2-slide-in .4s cubic-bezier(0, 1, 1, 1) .8s forwards;
+}
+@keyframes hero-h2-slide-in {
+    100% { opacity: 1; translate: 0 0; }
+}
+
+.hero h3 {
+    translate: 100% 0; opacity: 0;
+    animation: hero-h3-slide-in .4s cubic-bezier(0, 1, 1, 1) 1s forwards;
+}
+@keyframes hero-h3-slide-in {
+    100% { opacity: 1; translate: 0 0; }
+}
+
 
 .student-two-col {
     padding: 2em 1.5em;
