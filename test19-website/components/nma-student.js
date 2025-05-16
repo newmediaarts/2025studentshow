@@ -358,9 +358,9 @@ margin-top: 2em;
 
 .media__video {
     background-color: rgb(255 255 255 / .1);
-    aspect-ratio: 16/9;
     width: 100%;
     height: auto;
+    background-size: cover;
 }
     
 ` 
@@ -442,11 +442,11 @@ class NMAStudent extends HTMLElement {
                 ${student.media.map(media => html`
                     <div class="media__item"> 
                     ${media.type === 'video' ? html`
-                        <video class="media__video" poster="${media.poster}" controls height="1920" width="1080">
+                        <video class="media__video" poster="${media.poster}" controls height="1080" width="1920" style="background-image: url(${media.poster});">
                             <source src="${media.src}" type="video/webm">
                             Your browser does not support the video tag.
                         </video>
-                    ` : html`<img class="media__image" src="${media.src}" alt="${media.alt}" height="500" width="500">`}
+                    ` : html`<img class="media__image" src="${media.src}" alt="${media.alt}" height="1080" width="1920">`}
                     </div>
                 `).join('')}
 
