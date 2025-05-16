@@ -904,6 +904,9 @@ address a:hover{
     color: white;
     padding: 2em 1em 4em 1em;
 }
+#about p {
+    max-width: 35em;
+}
 
 /* FILM SECTION */
 #film {
