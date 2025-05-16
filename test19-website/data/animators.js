@@ -123,6 +123,12 @@ export default [
     hoverImage: 'img/portrait-lucas-hover.webp', 
     media: [
       {
+        src: 'img/Lucas-Stevens-demoreel.webm',
+        alt: 'Demo Reel',
+        type: 'video',
+        poster: 'img/Lucas-Stevens-demoreel-poster.webp',
+      },
+      {
         src: 'img/Lucas-Stevens-Project1.webm',
         alt: 'Project 1',
         type: 'video',
