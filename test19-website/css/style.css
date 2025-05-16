@@ -889,11 +889,16 @@ path.bg-yellow {fill:#FFFF42;}
     padding: 2em 1em 2em 1em;
 }
 
+address {
+    line-height: 1.5;
+}
+
 address a {
-    color: yellow;
+    color: white;
 }
 address a:hover{
-    color: white;
+    color: yellow;
+    text-decoration-color: var(--bg-green);
 }
 /* #map a, address a{
     color: white
