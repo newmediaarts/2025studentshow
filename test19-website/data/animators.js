@@ -306,16 +306,16 @@ export default [
         src: 'img/richard-escobar-mo-project2.webm',
         alt: 'Project 2',
         type: 'video',
-        poster: '',
+        poster: 'img/richard-escobar-mo-project2-poster.webp',
       },
       {
         src: 'img/richard-escobar-mo-project3.webm',
         alt: 'Project 3',
         type: 'video',
-        poster: '',
+        poster: 'img/richard-escobar-mo-project3-poster.webp',
       },
     ],
-    portfolio: '#',
+    portfolio: 'https://re3419.wixsite.com/user',
   }
 ]
 

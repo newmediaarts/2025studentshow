@@ -10,6 +10,7 @@ const styles = css `
     --color1: var(--bg-green);
     --color2: var(--bg-magenta);
     --color3: var(--bg-yellow);
+    --color4: #FAFBE7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,8 +35,12 @@ const styles = css `
     background-color: var(--bg-green);
 }
 
-.page-animators .hero {
-    --color1: var(--bg-yellow);
+.page-animators .hero,
+.hero.Animation {
+    --color1: var(--bg-magenta);
+    --color2: var(--bg-yellow);
+    --color3: var(--bg-yellow);
+    --color4: var(--bg-yellow);
 }
 
 .page-designers .hero::before {
@@ -44,8 +49,12 @@ const styles = css `
     background-color: var(--bg-magenta);
 }
 
-.page-designers .hero {
+.page-designers .hero,
+.hero.Interface {
+    --color1: var(--bg-green);
     --color2: var(--bg-yellow);
+    --color3: var(--bg-yellow);
+    --color4: var(--bg-yellow);
 }
 
 .hero-box {
@@ -124,8 +133,8 @@ const styles = css `
     font-size: clamp(1.2em, 5vw, 5em);
     font-weight: 600;
     line-height: 1;
-    color: var(--bg-green);
-    text-shadow: #FAFBE7 -0.2vw -0.2vw;
+    color: var(--color2);
+    text-shadow: var(--color1) -0.2vw -0.2vw;
     margin: 0;
     margin-top: .1em;
     margin-bottom: .1em;
@@ -137,7 +146,7 @@ const styles = css `
     font-size: clamp(1em, 2vw, 2.5em);
     line-height: 1;
     font-weight: 600;
-    text-shadow: #FAFBE7 0.2vw 0.2vw;
+    text-shadow: var(--color4) 0.2vw 0.2vw;
     color: var(--bg-black);
     margin: 0;
 }
@@ -198,21 +207,21 @@ const styles = css `
 }
 
 .hero .text-white {
-    color: #FAFBE7;
+    color: var(--color4);
     font-stretch: semi-condensed;
     z-index: 5;
 }
 
 .hero .text-vertical .title {
-    translate: -100% 0; opacity: 0;
-    animation: hero-text-vertical-slide-in .3s cubic-bezier(0, 1, 1, 1) .6s forwards;
+    translate: -50% 0; opacity: 0;
+    animation: hero-text-vertical-slide-in .5s cubic-bezier(0, 1, 1, 1) .5s forwards;
 }
 @keyframes hero-text-vertical-slide-in {
     100% { opacity: 1;translate: 0 0; }
 }
 
 .hero .text-stack .title:nth-child(1) {
-    translate: -100% 0; opacity: 0;
+    translate: -50% 0; opacity: 0;
     animation: hero-text-stack-1-slide-in .4s cubic-bezier(0, 1, 1, 1) forwards;
 }
 @keyframes hero-text-stack-2-slide-in {
@@ -220,15 +229,15 @@ const styles = css `
 }
 
 .hero .text-stack .title:nth-child(2) {
-    translate: -100% 0; opacity: 0;
-    animation: hero-text-stack-2-slide-in .4s cubic-bezier(0, 1, 1, 1) .2s forwards;
+    translate: -50% 0; opacity: 0;
+    animation: hero-text-stack-2-slide-in .5s cubic-bezier(0, 1, 1, 1) .2s forwards;
 }
 @keyframes hero-text-stack-3-slide-in {
     100% { opacity: 1; translate: 0 0; }
 }
 
 .hero .text-stack .title:nth-child(3) {
-    translate: -100% 0; opacity: 0;
+    translate: -50% 0; opacity: 0;
     animation: hero-text-stack-3-slide-in .4s cubic-bezier(0, 1, 1, 1) .4s forwards;
 }
 @keyframes hero-text-stack-1-slide-in {
@@ -236,16 +245,16 @@ const styles = css `
 }
 
 .hero h2 {
-    translate: 100% 0; opacity: 0;
-    animation: hero-h2-slide-in .4s cubic-bezier(0, 1, 1, 1) .8s forwards;
+    translate: 50% 0; opacity: 0;
+    animation: hero-h2-slide-in .6s cubic-bezier(0, 1, 1, 1) .6s forwards;
 }
 @keyframes hero-h2-slide-in {
     100% { opacity: 1; translate: 0 0; }
 }
 
 .hero h3 {
-    translate: 100% 0; opacity: 0;
-    animation: hero-h3-slide-in .4s cubic-bezier(0, 1, 1, 1) 1s forwards;
+    translate: 50% 0; opacity: 0;
+    animation: hero-h3-slide-in .6s cubic-bezier(0, 1, 1, 1) .7s forwards;
 }
 @keyframes hero-h3-slide-in {
     100% { opacity: 1; translate: 0 0; }
@@ -381,7 +390,7 @@ class NMAStudent extends HTMLElement {
     });
  
     const markup = html`
-    <section class="hero">
+    <section class="hero ${program}">
             <h1 class="hide-visually" part="hide-visually">2025 Interface Designers</h1>
 
             <div class="hero-box">
@@ -409,9 +418,9 @@ class NMAStudent extends HTMLElement {
                             <div class="drop-shadow drop-shadow-a-bg">${student.lastName}</div>
                         </div>
 
-                        <h2>NMA Graduate</h2>
+                        <h2>${program}</h2>
 
-                        <h3>${program}</h3>
+                        <h3>NMA Graduate</h3>
                     </div>
                 </div>
 
@@ -433,7 +442,7 @@ class NMAStudent extends HTMLElement {
                     </div> -->
                     <div class="social-icons">
                         ${student.social ? student.social.map(social => html`
-                            <a class="social-icon ${social.label}" href="${social.url}"><span>${social.label}<span></a>
+                            <a class="social-icon ${social.label}" href="${social.url}" target="_blannk"><span>${social.label}<span></a>
                         `).join('') : ''}
                     </div>
                 </div>
@@ -452,7 +461,7 @@ class NMAStudent extends HTMLElement {
 
                     <h3 class="more">Want to see more? </h3>
                     <div class="buttons">
-                        <a class="button" href="${student.portfolio}">Visit ${student.name}'s Website</a>
+                        <a class="button" href="${student.portfolio}" target="_blannk">Visit ${student.name}'s Website</a>
                     </div>
                 </div>
             
