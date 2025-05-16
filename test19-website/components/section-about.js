@@ -38,6 +38,8 @@ class sectionAbout extends HTMLElement {
                 <li>Jae Stableford</li>
                 <li>Steve Harris</li>
                 <li>Sarah Bremser</li>
+                <li>Veronica Ogata</li>
+                <li>Nāwaʻa Napoleon</li>
                 <li>Chris Lee</li>
             </ul>
 
