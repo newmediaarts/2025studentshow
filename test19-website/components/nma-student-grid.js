@@ -41,7 +41,7 @@ class NMAStudentGrid extends HTMLElement {
 
 
 
-    const markup = html`<ul class="students">
+    const markup = html`<ul class="students ${category}">
     ${students.map(student => html`
     <li>
       <a class="student" href="${student.url}" >
@@ -67,6 +67,20 @@ class NMAStudentGrid extends HTMLElement {
     justify-content: center;
     padding: 0 1em;
     margin: 0;
+  }
+
+  @media (min-width: 1186px) and (max-width: 1514px) {
+    .students.interface  {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 168px));
+    }
+  }
+
+    @media (min-width: 1515px) {
+    .students.interface  {
+      grid-template-columns: repeat(7, minmax(140px, 1fr));
+      margin-inline: auto;
+      width: 76.5%;
+    }
   }
 
   .students li {
